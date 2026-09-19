@@ -164,11 +164,17 @@ With $p$ objectives $f_k(x)$ and goals $g_k$: $f_k(x) + u_k - v_k = g_k$, $u_k, 
 **Preemptive (lexicographic) method:** rank goals into priorities $P_1 \gg P_2 \gg \cdots$. Form one objective per priority level (sum of deviations at that level) and optimize lexicographically: minimize $F_1$ (highest priority) first; then minimize $F_2$ subject to not degrading $F_1$; and so on. In simplex, carry one objective row per priority.
 
 | Aspect | Weighted non-preemptive | Preemptive lexicographic |
+
 |---|---|---|
+
 | Number of objectives | One combined $F$ | One $F_i$ per priority level |
+
 | Preference input | Numeric weights $p_k, q_k \geq 0$ | Priority order $P_1 \gg P_2 \gg \cdots$ |
+
 | Simplex rows | Single objective row | One objective row per priority |
+
 | Trade-off | Lower goal can compensate higher goal | Higher goal is never sacrificed for lower goal |
+
 | Lecture instance | $10u_1 + 8v_4 + 5u_2 + 3u_3 + v_1$ | $F_1 = u_1$, $F_2 = v_4$, $F_3 = 5u_2 + 3u_3$, $F_4 = v_1$ |
 
 ### 25.4 Worked multi-goal example (company, priorities P1–P4)
@@ -232,10 +238,15 @@ Constraints: $x_1 + 2x_2 \geq 2$, $2x_1 - x_2 \leq 4$, $x_1 + x_2 \leq 5$, $x_1,
 Vertex values used in the lecture:
 
 | Vertex | Case 1 $f_1$ | Case 1 $f_2$ | Case 2 $f_1$ | Case 2 $f_2$ | Case 3 $f_1$ | Case 3 $f_2$ |
+
 |---|---|---|---|---|---|---|
+
 | A $(2,0)$ | $2$ | $10$ | $-4$ | $-2$ | $-4$ | $-2$ |
+
 | B $(3,2)$ | $5$ | $19$ | $-8$ | $-7$ | $-4$ | $-5$ |
+
 | C $(0,5)$ | $5$ | $10$ | $-5$ | $-10$ | $-5$ | $-5$ |
+
 | D $(0,1)$ | $1$ | $2$ | $1$ | $-1$ | $-1$ | $-1$ |
 
 - Case 1 (blue): $f_1 = x_1 + x_2$, $f_2 = 5x_1 + 2x_2$. Vertex values: $f_1$: A=2, B=5, C=5, D=1; $f_2$: A=10, B=19, C=10, D=2. Both uniquely minimized at D. So D is the **ideal** solution and also the unique efficient point (cone at D meets the feasible region only at D).
@@ -278,13 +289,21 @@ DP (recursive programming, Bellman 1957) breaks a decision problem into **stages
 Terminology:
 
 | Term | Symbol | Meaning in Lec 27 |
+
 |---|---|---|
+
 | Stage | $j$ | One decision step; $n$ variables means $n$ stages |
+
 | Decision | $u_j$ | Choice at stage $j$ |
+
 | Return | $f_j(u_j)$ | Stage contribution; total is separable |
+
 | State | $x_j$ | Resource used or available up to stage $j$ |
+
 | Transformation | $x_{j-1} = t_j(x_j, u_j)$ | Link between consecutive states |
+
 | Value function | $F_j(x_j)$ | Best return from first $j$ stages given $x_j$ |
+
 | Policy | $(u_1, \dots, u_n)$ | Full sequence of decisions |
 
 - **Stage** $j$: one step of the sequential decision process (often one variable $u_j$); suffix $j$ indexes stages. An $n$-variable problem is an $n$-stage problem.
@@ -326,10 +345,15 @@ States (backward): $x_3 = u_1+u_2+u_3 \geq 100$; $x_2 = u_1+u_2 = x_3-u_3$; $x_1
 Student has 3 days for courses A, B, C (whole days only). Grade table $f_j(u_j)$:
 
 | $u_j \backslash j$ | A (1) | B (2) | C (3) |
+
 |---|---|---|---|
+
 | 0 | 0 | 1 | 0 |
+
 | 1 | 1 | 1 | 1 |
+
 | 2 | 1 | 3 | 3 |
+
 | 3 | 3 | 4 | 3 |
 
 Maximize $f_1(u_1)+f_2(u_2)+f_3(u_3)$ s.t. $u_1+u_2+u_3 \leq 3$, $u_j \geq 0$ integers (discrete, $\leq$ constraint — unlike Example A).
@@ -380,7 +404,11 @@ States: $x_3 = u_1u_2u_3 \leq 6$, $x_2 = x_3/u_3$, $x_1 = x_2/u_2 = u_1$; stage 
 ### Comparison table
 
 | Aspect | Integer Programming (Lec 24) | Goal Programming (Lec 25) | Multi-Objective Programming (Lec 26) | Dynamic Programming (Lec 27) |
+
 |---|---|---|---|---|
+
 | Decision variables | Same as LP + integrality ($x_i \in \mathbb{Z}$, all or subset) | LP variables + deviation pairs $(u_k, v_k \geq 0)$ per goal | Shared $x$ across $p$ objectives | Stage decisions $u_j$ + states $x_j$ |
+
 | Objective handling | Single $z$ unchanged; feasible set shrinks to lattice | Replace $z$ by deviation minimizing $F$ (weighted sum or lexicographic $F_1, F_2, \dots$) | Keep vector $(f_1,\dots,f_p)$; scalarize only to search (weights / $\varepsilon$-bounds) | Separable stage returns $\sum f_j(u_j)$ via value functions $F_j(x_j)$ |
+
 | Solution technique | B&B tree (branch on fractions, bound, fathom) or Gomory cuts from fractional simplex rows | Modified simplex with $u,v$ complementarity; graphical check for 2-D | Efficiency-cone test; weighting theorem; report efficient set (ideal if coincident) | Backward recursion (calculus or stage tables), trace back optimal policy |

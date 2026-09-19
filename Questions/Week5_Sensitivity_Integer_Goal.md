@@ -69,15 +69,25 @@ Coverage: sensitivity II ($a_{ij}$ changes, new/deleted variables and constraint
 
 | Q | Answer |
 |---|---|
+
 | 1 | (b) |
+
 | 2 | (a) |
+
 | 3 | (b) |
+
 | 4 | (a) |
+
 | 5 | (b) |
+
 | 6 | $(2, 1)$, $z^* = 8$ |
+
 | 7 | $\Delta_6 = +2 > 0$; basis no longer optimal, append column and re-iterate |
+
 | 8 | $F = 0$; goal exactly met ($800(24) + 400(12) = 24000$) |
+
 | 9 | See solution: non-basic/zero-basic deletion and loose-constraint deletion keep optimum; positive-basic deletion and tight-constraint deletion force re-solve |
+
 | 10 | See solution: $\min u+v$, $f(x)+u-v=g$, $u v=0$ + hard constraints; weighted = one combined $F$, preemptive = lexicographic $F_1, F_2, \dots$ |
 
 ## Worked solutions

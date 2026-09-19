@@ -67,15 +67,25 @@ Coverage: revised simplex ($B^{-1}$, $\pi = c_B B^{-1}$, deviations $\bar{c}_j =
 
 | Q | Answer |
 |---|---|
+
 | 1 | (b) |
+
 | 2 | (c) |
+
 | 3 | (c) |
+
 | 4 | (d) |
+
 | 5 | (a) |
+
 | 6 | Infeasible (Phase-1/Big-M ends with artificial $> 0$ in basis; max of $3x_1+4x_2+2x_3$ under row 1 is $8 < 16$) |
+
 | 7 | $x_1 = 8/7$, $x_2 = 16/7$, $z^* = 400/7 \approx 57.14$ |
+
 | 8 | $(11/4, 0, 5/4)$, $Z^* = 19/2$ |
+
 | 9 | See solution: less memory/computation; $\pi$ solves dual + drives sensitivity |
+
 | 10 | See solution: six rules; double transpose/direction swap restores primal |
 
 ## Worked solutions

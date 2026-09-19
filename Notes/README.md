@@ -5,11 +5,17 @@ Prof. Kusum Deep, IIT Roorkee. Prepared from the full lecture transcripts in `..
 ## Contents
 
 | File | Lectures | Topics |
+
 |---|---|---|
+
 | [Module1_LPP_Basics_Simplex.md](Module1_LPP_Basics_Simplex.md) | 1–14 | OR models, LP formulation, graphical method, convex sets, simplex, Big-M, two-phase, special cases (multiple / unbounded / infeasible), revised simplex, case studies |
+
 | [Module2_Duality_Sensitivity.md](Module2_Duality_Sensitivity.md) | 15–23 | Primal–dual construction, weak/strong duality, complementary slackness, dual simplex, sensitivity analysis I & II, case studies |
+
 | [Module3_Integer_Goal_MultiObj_DP.md](Module3_Integer_Goal_MultiObj_DP.md) | 24–27 | Integer programming (Gomory, branch-and-bound), goal programming, multi-objective programming, dynamic programming |
+
 | [Module4_Transport_Assign_Sequencing.md](Module4_Transport_Assign_Sequencing.md) | 28–35 | Transportation (Vogel, MODI), assignment (Hungarian), sequencing (Johnson's rule, 2-machines / 3-machines / graphical), case studies |
+
 | [Module5_Game_Theory.md](Module5_Game_Theory.md) | 36–40 | Zero-sum games, saddle point, mixed strategies, 2x2 / 2xn / mx2, dominance, game-to-LPP conversion, case studies |
 
 ## How to use these notes
