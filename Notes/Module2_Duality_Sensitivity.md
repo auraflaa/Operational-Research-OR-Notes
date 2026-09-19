@@ -62,29 +62,17 @@ Second worked symmetric example in Lec 15 (min orientation):
 ### 1.4 General (asymmetric) conversion table
 
 | Primal (given row) | Dual (corresponding element) |
-
 |---|---|
-
 | $\max$ objective | $\min$ objective |
-
 | $\min$ objective | $\max$ objective |
-
 | Constraint $i$ is $\leq$ (in a max problem) | Dual variable $y_i \geq 0$ |
-
 | Constraint $i$ is $\geq$ (in a max problem) | Dual variable $y_i \leq 0$ |
-
 | Constraint $i$ is $=$ | Dual variable $y_i$ unrestricted in sign |
-
 | Variable $x_j \geq 0$ | Dual constraint $j$ is $\geq$ type (for min dual) |
-
 | Variable $x_j \leq 0$ | Dual constraint $j$ is $\leq$ type (for min dual) |
-
 | Variable $x_j$ unrestricted | Dual constraint $j$ is $=$ |
-
 | RHS $b_i$ | Objective coefficient of $y_i$ |
-
 | Objective coefficient $c_j$ | RHS of dual constraint $j$ |
-
 | Matrix $A$ | Transposed matrix $A^T$ |
 
 Practical procedure for mixed problems: first convert the problem to a consistent symmetric shape (e.g. for a min problem make every constraint $\geq$ by multiplying $\leq$ rows by $-1$; split each $=$ row into one $\leq$ and one $\geq$ row), then apply the six symmetric rules, then simplify (see Lec 16 examples below).
@@ -408,29 +396,17 @@ Same $2x_1+3x_2+x_3$ example; simplex multipliers $\pi = c_B B^{-1} = (2,3)[4,-1
 Sensitivity rule table:
 
 | Change type | What to recompute | Keep basis if | Else |
-
 |---|---|---|---|
-
 | Non-basic $c_j$ | One $\Delta_j$ | Sign rule holds | Pivot that variable in |
-
 | Basic $c_j$ | All non-basic $\Delta$ | All signs hold | Re-iterate |
-
 | RHS $b$ | $B^{-1}b^*$ | $\geq 0$ | Dual-simplex re-iterate |
-
 | New variable column $P$ | $\Delta = c-\pi P$ | $\Delta$ fails entry (max) | Append column and pivot |
-
 | Non-basic $a_{ij}$ | Same as new variable | Same test | Same action |
-
 | Basic $a_{ij}$ | No shortcut | — | Resolve |
-
 | New constraint | Test current optimum | Satisfies it | Append row and resolve |
-
 | Delete non-basic or zero-basic variable | Nothing | Always | — |
-
 | Delete positive basic variable | Drop column and basis row, add artificial | — | Two-phase or big-M |
-
 | Delete loose constraint (slack $> 0$) | Nothing | Always | — |
-
 | Delete tight constraint (slack $= 0$) | — | — | Resolve |
 
 ### 7.1 Adding a new variable (new product D)
@@ -532,37 +508,21 @@ Key slide figures:
 ### 8.6 Module quiz with answers (Lec 23, all 15 questions)
 
 | No. | Question | Answer |
-
 |---|---|---|
-
 | 1 | The dual of the dual is the _____. | primal |
-
 | 2 | If the primal problem is feasible and its objective function is unbounded, then the dual has _____. | infeasible solution |
-
 | 3 | In the dual simplex method, the criterion for the leaving variable is _____. | most negative RHS |
-
 | 4 | If dual is feasible and unbounded, then the primal problem is _____. | infeasible |
-
 | 5 | The value of the objective function of the minimum (dual) problem for any dual feasible solution is a _____ to the maximum value of the primal objective. | upper bound |
-
 | 6 | If dual is feasible and primal is infeasible, then dual is _____. | unbounded |
-
 | 7 | A problem which can be solved by dual simplex can also be solved by simplex. True or false? | True |
-
 | 8 | If a primal constraint is a strict inequality at the optimum, the corresponding dual variable must be _____ at the optimum. | 0 |
-
 | 9 | Every LP has its dual which is also an LP. True or false? | True |
-
 | 10 | If a primal variable is positive, the corresponding dual constraint will be satisfied as a _____ at the optimum. | equation (equality) |
-
 | 11 | If a dual constraint is a strict inequality, the corresponding primal variable must be _____ at the optimum. | 0 |
-
 | 12 | If $x_j$ is unrestricted in sign in the primal, then the $j$th dual constraint is a _____. | equality (equation) |
-
 | 13 | _____ reflect the net changes in optimum $Z$ per unit increase in constraint resources while the optimum basis is unchanged. | Shadow prices |
-
 | 14 | State the weak duality theorem. | For min primal and max dual, $f(X) \geq w(Y)$ for any feasible $X,Y$; min $f \geq$ max $w$. |
-
 | 15 | State the strong duality theorem. | If both primal and dual are feasible, both have optimal solutions with equal optimal values. |
 
 Quiz slide sources:

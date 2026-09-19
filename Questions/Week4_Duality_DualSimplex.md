@@ -65,25 +65,15 @@ Coverage: asymmetric dual shortcuts ($=$ row $\to$ unrestricted $y$; unrestricte
 
 | Q | Answer |
 |---|---|
-
 | 1 | (c) |
-
 | 2 | (b) |
-
 | 3 | (b) |
-
 | 4 | (a) |
-
 | 5 | (b) |
-
 | 6 | Primal $(10,5)$, $f^* = 55$; dual $(2,1)$, $w^* = 55$; multipliers $(0,0) \to (5,0) \to (2,1)$ |
-
 | 7 | $x_1 = 7$, $x_3 = 4$, rest $0$, $Z^* = 7$; $\pi = (-2,-1/2)$ (lecture sign convention; dual optimum) |
-
 | 8 | (i) $c_3 \le 4$ (at $c_3 = 6$, re-optimise to $(x_1,x_3) = (2,1)$, $Z = 10$); (ii) $3/4 \le d \le 3$, $Z = 5d + 3$ |
-
 | 9 | See solution: equal feasible values $\Rightarrow$ optimal; feasible pair $\Rightarrow$ equal-value optima |
-
 | 10 | See solution: dual-feasible/primal-infeasible start; leaving first (most negative RHS); max ratio over negative row entries; no negative entry $\Rightarrow$ infeasible |
 
 ## Worked solutions

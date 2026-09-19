@@ -67,25 +67,15 @@ Coverage: multi-objective programming (ideal vs efficient solutions, efficiency 
 
 | Q | Answer |
 |---|---|
-
 | 1 | (a) |
-
 | 2 | (c) |
-
 | 3 | (b) |
-
 | 4 | (b) |
-
 | 5 | (a) |
-
 | 6 | Ideal: $A = (4,0)$ ($f_1 = 20$, $f_2 = 12$); efficient: $O = (0,0)$, $B = (2/3,5/3)$, $C = (0,1)$ (no ideal besides $A$) |
-
 | 7 | $u_1 = u_2 = u_3 = 100/3$, $z^* = 10000/3 \approx 3333.3$ |
-
 | 8 | $Z_{NW} = 1015$ |
-
 | 9 | See solution: Bellman statement; $j, u_j, x_j, x_{j-1} = t_j(x_j,u_j), F_j(x_j) = \mathrm{opt}_{u_j}[f_j(u_j) + F_{j-1}(x_{j-1})]$ |
-
 | 10 | See solution: loop definition; shift $\theta$ at alternate corners; $\epsilon$-zero in cheapest independent non-loop cell |
 
 ## Worked solutions

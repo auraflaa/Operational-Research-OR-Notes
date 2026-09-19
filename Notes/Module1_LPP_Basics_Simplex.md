@@ -111,15 +111,10 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Stage table as taught:
 
 | Stage | Funds available | Amount invested | Surplus definition |
-
 |---|---|---|---|
-
 | 0 | Rs 100000 | $X_A+X_C+X_D$ | $S_0 = 100000 - X_A - X_C - X_D$ |
-
 | 1 | $0.5X_A+1.2X_C+1.08S_0$ | $X_B$ | $S_1 =$ available $-$ invested |
-
 | 2 | returns at year 2 $+ 1.08S_1$ | $X_E$ | $S_2 =$ available $-$ invested |
-
 | 3 | returns at year 3 $+ 1.08S_2$ | none, objective Max cash on hand | — |
 
 - Assumptions stated: no borrowing; uninvested funds earn 8 percent in money market; returns are immediately reinvestable [e.g. project C returns at time 1 can fund project B].
@@ -371,17 +366,11 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Comparison table:
 
 | Item | Big-M | Two-phase |
-
 |---|---|---|
-
 | Objective used | Original plus minus M per artificial | Phase 1 Min sum of artificials, then original |
-
 | Top $c_j$ row | Contains $-M$ | Phase 1 contains $0$ and $-1$ only |
-
 | Deviation row | Contains $M$ terms throughout | Phase 2 has no $M$ terms |
-
 | Tableau size | Keeps artificial columns till end | Drops artificial columns after Phase 1 |
-
 | BFS path and final answer | Same | Same |
 
 ### 7.3 Lec-7 exercise [statement from transcript]
@@ -522,15 +511,10 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Iteration summary table:
 
 | Iter | $c_B$ | Basis | $B^{-1}$ | RHS $\bar{b}$ | $\pi = c_B B^{-1}$ |
-
 |---|---|---|---|---|---|
-
 | 1 | $(0,-M,-M)$ | $x_4,x_6,x_7$ | $I$ | $(11,3,1)$ | $(0,-M,-M)$ |
-
 | 2 | $(0,-M,-1)$ | $x_4,x_6,x_3$ | row3 $[-1,-2,1]$ | $(10,1,1)$ | $(0,-M,2M-1)$ |
-
 | 3 | $(0,-1,-1)$ | $x_4,x_2,x_3$ | see Sec. 11.2 | $(12,1,1)$ | $(0,-1,1)$ |
-
 | 4 | $(3,-1,-1)$ | $x_1,x_2,x_3$ | matrix above | $(4,1,9)$ | $(1/3,-1/3,2/3)$ |
 
 - Advantages: needs only $\bar{b}$, $\bar{P}_k$ and $\pi$ instead of full tableau [less memory and computation]; $\pi$ at each iteration is recorded; final $\pi$ solves the dual and is used in sensitivity analysis [duality and sensitivity come in later modules].

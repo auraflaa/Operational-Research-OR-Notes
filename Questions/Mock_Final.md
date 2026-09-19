@@ -7,57 +7,31 @@ Note: This is instructor-style practice assembled and adapted from the weekly qu
 ## Syllabus coverage (question to lectures)
 
 | Question | Module | Topic | Lectures |
-
 |---|---|---|---|
-
 | A1 | 1 | OR model components / LPP definition | 1 |
-
 | A2 | 1 | Graphical optimum (2-variable) | 3 |
-
 | A3 | 1 | Big-M construction | 6 |
-
 | A4 | 1 | Multiple optima signal in tableau | 8, 14 |
-
 | A5 | 2 | Symmetric dual construction | 15 |
-
 | A6 | 2 | Weak duality / complementary slackness | 16-17 |
-
 | A7 | 3 | IPP rounding failure | 24 |
-
 | A8 | 3 | Single-goal GP geometry | 25 |
-
 | A9 | 4 | Transportation independent equations | 28 |
-
 | A10 | 5 | Saddle / fair / strictly determinable; 2x2 formula | 36, 38 |
-
 | B1 | 1 | Graphical Max with mixed constraints | 3 |
-
 | B2 | 1 | Simplex on 2-variable Max | 5 |
-
 | B3 | 2 | Primal-dual graphical pair + multipliers | 18 |
-
 | B4 | 2 | New-variable deviation test | 21 |
-
 | B5 | 3 | Branch-and-bound (2-variable IPP) | 24 |
-
 | B6 | 3 | DP separable sum of squares | 27 |
-
 | B7 | 4 | NW-corner IBFS cost | 28 |
-
 | B8 | 4 | Johnson n x 2 elapsed time | 31 |
-
 | B9 | 5 | 2x2 game value (oddments) | 38 |
-
 | B10 | 5 | 2x2 game value (formula) | 38 |
-
 | C1 | 1 | Standard form with free variable | 5 |
-
 | C2 | 2 | Optimality criterion + strong duality (proof sketch + illustration) | 17 |
-
 | C3 | 3 | Single-goal GP form, weighted vs preemptive, goal evaluation | 25 |
-
 | C4 | 4 | MODI loop + degeneracy; n x 3 reduction | 28, 32 |
-
 | C5 | 5 | Game-to-LPP pair, shift rule, solved 2x2 | 39 |
 
 ---
@@ -178,55 +152,30 @@ Note: This is instructor-style practice assembled and adapted from the weekly qu
 
 | Q | Answer |
 |---|---|
-
 | A1 | (d) |
-
 | A2 | (c) $(6,0)$, $24$ |
-
 | A3 | (b) |
-
 | A4 | (c) |
-
 | A5 | (a) |
-
 | A6 | (c) |
-
 | A7 | (b) |
-
 | A8 | (a) |
-
 | A9 | (c) $6$ |
-
 | A10 | (b) |
-
 | B1 | $(0, 12)$, max $84$ |
-
 | B2 | $(3, 9/2)$, max $63/2 = 31.5$ |
-
 | B3 | Primal $(8, 4) = 44$; dual $(2/3, 5/3) = 44$ |
-
 | B4 | $\Delta_6 = +2 > 0$; basis no longer optimal, append column and re-iterate |
-
 | B5 | $(2, 1)$, $z^* = 11$ |
-
 | B6 | $(20, 20, 20)$, $z^* = 1200$ |
-
 | B7 | $Z_{NW} = 785$ |
-
 | B8 | $T = 32$ h (e.g. 2-4-3-5-1) |
-
 | B9 | $V = 7/2$ |
-
 | B10 | $V = 17/4$ |
-
 | C1 | Max $-2x_1 + 4x_2 - 2x_4 + 2x_5$ s.t. three equalities, all vars $\geq 0$ (see solution) |
-
 | C2 | Equal feasible values imply optimality; feasible pair implies equal-value optima; B3 values both $44$ |
-
 | C3 | $\min u+v$, $f(x)+u-v=g$, $uv=0$ + hard constraints; weighted = one combined $F$, preemptive = lexicographic; $F=0$, goal met |
-
 | C4 | Loop + $\theta$-shift + $\epsilon$-zero; $G/H$ + Johnson; else method fails |
-
 | C5 | A: $\min\sum x_i$ s.t. $\geq 1$; B: $\max\sum y_j$ s.t. $\leq 1$; duals, solve B's LP; $p=(1/4,3/4)$, $q=(1/2,1/2)$, $V=7/2$ |
 
 ---

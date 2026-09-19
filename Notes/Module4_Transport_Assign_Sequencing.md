@@ -61,13 +61,9 @@ Condensed worked example (same cost set used for all three IBFS methods in lectu
 Supplies $a = [7,9,18]$, demands $b=[5,8,7,14]$, total $34$ (balanced). Relevant costs: $c_{11}=19, c_{12}=30, c_{22}=30, c_{23}=40, c_{33}=70, c_{34}=20$.
 
 |  | D1(5) | D2(8) | D3(7) | D4(14) | Supply |
-
 |---|---|---|---|---|---|
-
 | S1(7) | **5** (19) | **2** (30) | — | — | 7 |
-
 | S2(9) | — | **6** (30) | **3** (40) | — | 9 |
-
 | S3(18) | — | — | **4** (70) | **14** (20) | 18 |
 
 $$Z_{NW} = 5(19)+2(30)+6(30)+3(40)+4(70)+14(20) = 1015$$
@@ -183,49 +179,31 @@ If $c'_{ij}=c_{ij}-u_i-v_j$ for arbitrary $u_i,v_j$, and $X^0$ minimizes $\sum\s
 Original cost matrix (reconstructed from lecture's row minima $7,6,6,8,5$ and column-4 extra $2$):
 
 |  | J1 | J2 | J3 | J4 | J5 |
-
 |---|---|---|---|---|---|
-
 | W1 | 8 | 10 | 14 | 12 | 7 |
-
 | W2 | 6 | 16 | 13 | 12 | 10 |
-
 | W3 | 12 | 11 | 6 | 8 | 7 |
-
 | W4 | 11 | 8 | 13 | 12 | 8 |
-
 | W5 | 5 | 10 | 15 | 9 | 14 |
 
 After row minus min, then column-4 minus $2$:
 
 |  | J1 | J2 | J3 | J4 | J5 |
-
 |---|---|---|---|---|---|
-
 | W1 | 1 | 3 | 7 | 3 | 0 |
-
 | W2 | 0 | 10 | 7 | 4 | 4 |
-
 | W3 | 6 | 5 | 0 | 0 | 1 |
-
 | W4 | 3 | 0 | 5 | 2 | 0 |
-
 | W5 | 0 | 5 | 10 | 2 | 9 |
 
 Cover: verticals at J1 (W2), J2 (W4), J5 (W1); horizontal at row 3 (J3/J4 zero). Total lines $=4<5$, not optimal. Smallest uncovered $=2$ (uncovered entries are $7,3,7,4,5,2,10,2$). Subtract $2$ from uncovered, add $2$ at 3 intersections (row-3 x cols 1,2,5):
 
 |  | J1 | J2 | J3 | J4 | J5 |
-
 |---|---|---|---|---|---|
-
 | W1 | 1 | 3 | 5 | 1 | 0 |
-
 | W2 | 0 | 10 | 5 | 2 | 4 |
-
 | W3 | 8 | 7 | 0 | 0 | 3 |
-
 | W4 | 3 | 0 | 3 | 0 | 0 |
-
 | W5 | 0 | 5 | 8 | 0 | 9 |
 
 Now 5 lines cover zeros $=n$ — optimal. Assign at zeros:
@@ -263,13 +241,9 @@ Max $Z=x_1+x_2$ s.t. $3x_1+2x_2\le 5$, $x_2\le 2$, $x_1,x_2\ge 0$ integers. LP0 
 ### 3. Transportation case study — wheat (Punjab/Haryana/UP to Delhi/Mumbai/Chennai/Kolkata)
 
 |  | Delhi(8) | Mumbai(5) | Chennai(4) | Kolkata(4) | Supply |
-
 |---|---|---|---|---|---|
-
 | Punjab(9) | 20 | 50 | 40 | 60 | 9 |
-
 | Haryana(7) | 16 | 30 | 45 | 40 | 7 |
-
 | UP(5) | 14 | 8 | 30 | 15 | 5 |
 
 Check balanced: $9+7+5=21=8+5+4+4$.
@@ -349,11 +323,8 @@ Let $A_i,B_i$ be times of job $i$ on A,B.
 Times (hours): A $=[5,1,9,3,10]$, B $=[2,6,7,8,4]$ for jobs 1-5, order AB.
 
 | Job | 1 | 2 | 3 | 4 | 5 |
-
 |---|---|---|---|---|---|
-
 | A | 5 | 1 | 9 | 3 | 10 |
-
 | B | 2 | 6 | 7 | 8 | 4 |
 
 Iterations: min $=1=A_2\to$ job 2 first $[\,2,\_,\_,\_,\_\,]$. Remaining min $=2=B_1\to$ job 1 last $[\,2,\_,\_,\_,1\,]$. Remaining min $=3=A_4\to$ job 4 second $[\,2,4,\_,\_,1\,]$. Remaining $\{3,5\}$: min $=4=B_5\to$ job 5 before last $[\,2,4,\_,5,1\,]$. Leftover job 3 middle.
@@ -363,17 +334,11 @@ Optimal sequence: **2-4-3-5-1**.
 Elapsed/idle table (Time-in/out):
 
 | Seq | A: in-out | B: in-out |
-
 |---|---|---|
-
 | J2 | 0-1 | 1-7 |
-
 | J4 | 1-4 | 7-15 |
-
 | J3 | 4-13 | 15-22 |
-
 | J5 | 13-23 | 23-27 |
-
 | J1 | 23-28 | 28-30 |
 
 $T=30$ h. Machine A idle $30-28=2$ h (end). Machine B idle $(0\!-\!1)+(22\!-\!23)+(27\!-\!28)=1+1+1=3$ h.
@@ -404,23 +369,16 @@ Fictitious machines G,H with $G_i = A_i+B_i$, $H_i = B_i+C_i$. Solve GH in order
 ### 3. Worked example
 
 | Job | 1 | 2 | 3 | 4 | 5 |
-
 |---|---|---|---|---|---|
-
 | A | 8 | 10 | 6 | 7 | 11 |
-
 | B | 5 | 6 | 2 | 3 | 4 |
-
 | C | 4 | 9 | 8 | 6 | 5 |
 
 $\min A=6$, $\max B=6$, $\min C=4$. First condition holds ($6\ge 6$), so reduce:
 
 | Job | 1 | 2 | 3 | 4 | 5 |
-
 |---|---|---|---|---|---|
-
 | G=A+B | 13 | 16 | 8 | 10 | 15 |
-
 | H=B+C | 9 | 15 | 10 | 9 | 9 |
 
 Johnson on G/H gives multiple optima due to ties, e.g. 3-2-1-4-5 (also 3-2-4-1-5, 3-2-4-5-1, 3-2-5-4-1, 3-2-1-5-4, 3-2-5-1-4).
@@ -480,15 +438,10 @@ $$\min_j T_{1j} \ge \max_j T_{ij}\;\forall\,i=2\dots m-1 \quad \text{or} \quad \
 ### 2. Worked example 1 — 5 jobs x 4 machines
 
 |  | A | B | C | D | E |
-
 |---|---|---|---|---|---|
-
 | M1 | 11 | 13 | 9 | 16 | 16 |
-
 | M2 | 4 | 3 | 5 | 2 | 6 |
-
 | M3 | 6 | 7 | 5 | 8 | 4 |
-
 | M4 | 15 | 8 | 13 | 9 | 11 |
 
 $\min M_1=9$, $\min M_4=8$; $\max M_2=6$, $\max M_3=8$. Both $\ge$ hold ($9\ge 6,8$; $8\ge 6$, $8\ge 8$). Also $M_2+M_3=10$ constant. Reduce to M1/M4 Johnson $\to$ sequence **C-A-E-D-B**. Chained in/out table (gaps where machine busy) gives $T=83$.
@@ -518,13 +471,9 @@ In/out: A: J3 0-4, J1 4-8, J2 8-14, J5 14-23, J4 23-30. B: J3 4-10, J1 10-18, J2
 ### 2. Example 2 — n x 3 (P,Q,R)
 
 | Job | 1 | 2 | 3 | 4 | 5 |
-
 |---|---|---|---|---|---|
-
 | P | 51 | 78 | 55 | 19 | 85 |
-
 | Q | 29 | 15 | 45 | 50 | 31 |
-
 | R | 63 | 78 | 75 | 51 | 52 |
 
 $\min P=19$, $\max Q=50$, $\min R=51$. First fails ($19\ge 50$ false); second holds ($51\ge 50$), so reduce. $G=P+Q=[80,93,100,69,116]$ (lecture slide prints $136$ for job 5 — arithmetic gives $85+31=116$; treat $136$ as slide typo), $H=Q+R=[92,93,120,101,83]$. Johnson $\to$ **4-1-3-2-5**, $T=388$ (stated; verify by chaining).
@@ -567,19 +516,12 @@ Key slide images:
 ![Sequencing method selection: n x 2, n x 3, 2 x m, n x m](figures/m4_04_method_select.png)
 
 | Problem | Signature | Method |
-
 |---|---|---|
-
 | Transportation | $m$ sources, $n$ sinks, $c_{ij}$ | IBFS (NW / Least-cost / VAM) then MODI optimality; $m+n-1$ basics |
-
 | Assignment | square $n\times n$, one-to-one, 0/1 | Hungarian (row+col reduce, cover zeros, adjust) |
-
 | n x 2 sequencing | $A_i,B_i$, order AB | Johnson front/back fill |
-
 | n x 3 | A,B,C order ABC | Check $\min A\ge\max B$ or $\min C\ge\max B$, then $G=A+B$, $H=B+C$ + Johnson |
-
 | 2 x m | two jobs, own orders | Graphical 45-degree max-diagonal path |
-
 | n x m | $T_{ij}$, order $M_1\dots M_m$ | Check first/last dominate intermediates, then $G=\sum_{1}^{m-1}$, $H=\sum_{2}^{m}$ + Johnson |
 
 ### Degeneracy / unbalanced traps
