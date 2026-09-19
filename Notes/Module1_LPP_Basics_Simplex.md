@@ -577,7 +577,8 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 11. Ratio test fails — unbounded solution.
 12. Standard-form RHS — $\geq 0$.
 13. Make any variable basic by — elementary row operations.
-14. See Sec. 12.3(c). 15. Convex combination of $X_1,X_2,X_3$: $aX_1+bX_2+cX_3$, $a,b,c \geq 0$, $a+b+c=1$.
+14. See Sec. 12.3(c).
+15. Convex combination of $X_1,X_2,X_3$: $aX_1+bX_2+cX_3$, $a,b,c \geq 0$, $a+b+c=1$.
 
 ---
 
