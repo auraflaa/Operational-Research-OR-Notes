@@ -1,6 +1,6 @@
 ---
 lecture: 34
-source_pdf: Transcribes/lec34.pdf
+source_pdf: source_pdfs/lec34.pdf
 course: https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ma85
 ---
 

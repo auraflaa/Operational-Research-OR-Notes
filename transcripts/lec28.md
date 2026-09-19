@@ -1,6 +1,6 @@
 ---
 lecture: 28
-source_pdf: Transcribes/lec28.pdf
+source_pdf: source_pdfs/lec28.pdf
 course: https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ma85
 ---
 
