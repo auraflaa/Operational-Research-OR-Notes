@@ -6,38 +6,38 @@ Coverage: OR models and LP formulation, 2-variable graphical method with 4 outco
 
 **Q1 (MCQ).** Which statement about the general optimization model is FALSE?
 
-  - a) The three components are decision variables, objective function, and constraints.
-  - b) A problem with all linear $f, g_k, h_j$ is a linear programming problem; if any one is nonlinear it is nonlinear programming.
-  - c) An integer programming problem restricts decision variables to integer values.
-  - d) A linear programming problem requires the number of constraints $m$ to equal the number of variables $n$.
+    a) The three components are decision variables, objective function, and constraints.
+    b) A problem with all linear $f, g_k, h_j$ is a linear programming problem; if any one is nonlinear it is nonlinear programming.
+    c) An integer programming problem restricts decision variables to integer values.
+    d) A linear programming problem requires the number of constraints $m$ to equal the number of variables $n$.
 
 **Q2 (MCQ).** *Source: Lecture 1 quiz/exercise* Hat-profit formulation exercise: a company makes two hat types; type-1 needs twice the labour of type-2; all-type-2 capacity is 500 hats/day; sales limits 150 (type-1) and 250 (type-2); profits Rs 8 and Rs 5. Let $x_1, x_2$ be hats of type 1, 2 per day. The correct LPP is:
 
-  - a) Max $z = 8x_1 + 5x_2$ s.t. $2x_1 + x_2 \leq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$ integer.
-  - b) Max $z = 5x_1 + 8x_2$ s.t. $x_1 + 2x_2 \leq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$ integer.
-  - c) Min $z = 8x_1 + 5x_2$ s.t. $2x_1 + x_2 \geq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$.
-  - d) Max $z = 8x_1 + 5x_2$ s.t. $x_1 + x_2 \leq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$.
+    a) Max $z = 8x_1 + 5x_2$ s.t. $2x_1 + x_2 \leq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$ integer.
+    b) Max $z = 5x_1 + 8x_2$ s.t. $x_1 + 2x_2 \leq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$ integer.
+    c) Min $z = 8x_1 + 5x_2$ s.t. $2x_1 + x_2 \geq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$.
+    d) Max $z = 8x_1 + 5x_2$ s.t. $x_1 + x_2 \leq 500$, $x_1 \leq 150$, $x_2 \leq 250$, $x_1, x_2 \geq 0$.
 
 **Q3 (MCQ).** *Source: Lecture 3 quiz/exercise* Max $z = 5x_1 + 3x_2$ s.t. $x_1 + x_2 \leq 5$, $3x_1 + 8x_2 \leq 24$, $x_1, x_2 \geq 0$. The optimum is:
 
-  - a) $(0,3)$, $z = 9$
-  - b) $(16/5, 9/5)$, $z = 21.4$
-  - c) $(5,0)$, $z = 25$
-  - d) $(0,0)$, $z = 0$
+    a) $(0,3)$, $z = 9$
+    b) $(16/5, 9/5)$, $z = 21.4$
+    c) $(5,0)$, $z = 25$
+    d) $(0,0)$, $z = 0$
 
 **Q4 (MCQ).** *Source: Lecture 4 quiz/exercise* Which set is convex?
 
-  - a) $S = \{(x,y) : 3x^2 + 2y^2 \leq 6\}$
-  - b) $S = \{X : |X| = 1\}$
-  - c) $S = \{(x_1,x_2) : x_1^2 + x_2^2 \leq 4\} \cup \{(10,10)\}$
-  - d) Union of two disjoint closed discs
+    a) $S = \{(x,y) : 3x^2 + 2y^2 \leq 6\}$
+    b) $S = \{X : |X| = 1\}$
+    c) $S = \{(x_1,x_2) : x_1^2 + x_2^2 \leq 4\} \cup \{(10,10)\}$
+    d) Union of two disjoint closed discs
 
 **Q5 (MCQ).** In the simplex tableau for a Max problem, with deviation row $\bar{c}_j = c_j - c_B^T P_j$:
 
-  - a) Entering variable: smallest $\bar{c}_j$; leaving: largest ratio $b_i / p_{ik}$ over all rows.
-  - b) Entering variable: largest positive $\bar{c}_j$ (tie: smallest subscript); leaving: minimum ratio $b_i / p_{ik}$ over $p_{ik} > 0$ only.
-  - c) Entering variable: any negative $\bar{c}_j$; leaving: minimum ratio over all rows including $p_{ik} \leq 0$.
-  - d) Stop when some $\bar{c}_j > 0$; pivot column entries need not be checked.
+    a) Entering variable: smallest $\bar{c}_j$; leaving: largest ratio $b_i / p_{ik}$ over all rows.
+    b) Entering variable: largest positive $\bar{c}_j$ (tie: smallest subscript); leaving: minimum ratio $b_i / p_{ik}$ over $p_{ik} > 0$ only.
+    c) Entering variable: any negative $\bar{c}_j$; leaving: minimum ratio over all rows including $p_{ik} \leq 0$.
+    d) Stop when some $\bar{c}_j > 0$; pivot column entries need not be checked.
 
 **Q6 (Numerical).** *Source: Lecture 3 quiz/exercise* Solve graphically: Max $5x + 8y$ s.t. $3x + 2y \leq 36$, $3x + 4y \geq 24$, $x, y \geq 0$. Give the optimum point and optimum value.
 

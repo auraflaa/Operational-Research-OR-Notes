@@ -6,42 +6,42 @@ Coverage: revised simplex ($B^{-1}$, $\pi = c_B B^{-1}$, deviations $\bar{c}_j =
 
 **Q1.** In the revised simplex method, which quantities are carried from iteration to iteration instead of the full tableau?
 
-  - a) Only the objective value $z$ and the RHS $b$
-  - b) The basis inverse $B^{-1}$, the current RHS $\bar{b} = B^{-1}b$, the entering column $\bar{P}_k = B^{-1}P_k$, and the simplex multipliers $\pi = c_B B^{-1}$
-  - c) All $c_j - z_j$ entries for every variable including artificials kept forever
-  - d) Only the original matrix $A$ and the original cost vector $c$
+    a) Only the objective value $z$ and the RHS $b$
+    b) The basis inverse $B^{-1}$, the current RHS $\bar{b} = B^{-1}b$, the entering column $\bar{P}_k = B^{-1}P_k$, and the simplex multipliers $\pi = c_B B^{-1}$
+    c) All $c_j - z_j$ entries for every variable including artificials kept forever
+    d) Only the original matrix $A$ and the original cost vector $c$
 
 **Q2.** In the optimal tableau of a Max LPP, a non-basic variable has deviation (reduced cost) $\bar{c}_j = 0$. This signals:
 
-  - a) unbounded solution
-  - b) infeasible solution
-  - c) multiple (alternate) optimal solutions
-  - d) degenerate but unique solution
+    a) unbounded solution
+    b) infeasible solution
+    c) multiple (alternate) optimal solutions
+    d) degenerate but unique solution
 
 *Source: Lecture 14 quiz*
 
 **Q3.** During simplex iterations for a Max problem, the entering variable $x_k$ has every pivot-column entry $\le 0$, so the minimum-ratio test fails. This means:
 
-  - a) the problem has multiple optima
-  - b) the problem is infeasible
-  - c) the problem is unbounded
-  - d) the current basis is optimal and unique
+    a) the problem has multiple optima
+    b) the problem is infeasible
+    c) the problem is unbounded
+    d) the current basis is optimal and unique
 
 *Source: Lecture 14 quiz*
 
 **Q4.** For the running Big-M example of Lecture 11 (Max $3x_1 - x_2 - x_3 - Mx_6 - Mx_7$, final basis $\{x_1, x_2, x_3\} = (4,1,9)$), the final simplex multipliers $\pi = c_B B^{-1}$ equal:
 
-  - a) $(0, -M, -M)$
-  - b) $(0, -M, 2M-1)$
-  - c) $(0, -1, 1)$
-  - d) $(1/3, -1/3, 2/3)$
+    a) $(0, -M, -M)$
+    b) $(0, -M, 2M-1)$
+    c) $(0, -1, 1)$
+    d) $(1/3, -1/3, 2/3)$
 
 **Q5.** Primal: Max $z = 3x_1 + 4x_2$ s.t. $7x_1 - 2x_2 \ge 4$, $-3x_1 + x_2 \le 3$, $x_1, x_2 \ge 0$. After normalising to Max-with-$\le$ form, the symmetric dual is:
 
-  - a) Min $w = -4y_1 + 3y_2$ s.t. $-7y_1 - 3y_2 \ge 3$, $2y_1 + y_2 \ge 4$, $y_1, y_2 \ge 0$
-  - b) Max $w = -4y_1 + 3y_2$ s.t. $-7y_1 - 3y_2 \le 3$, $2y_1 + y_2 \le 4$, $y_1, y_2 \ge 0$
-  - c) Min $w = 4y_1 + 3y_2$ s.t. $7y_1 - 3y_2 \ge 3$, $-2y_1 + y_2 \ge 4$, $y_1, y_2 \ge 0$
-  - d) Min $w = 3y_1 + 4y_2$ s.t. $7y_1 - 2y_2 \ge -4$, $-3y_1 + y_2 \ge 3$, $y_1, y_2 \ge 0$
+    a) Min $w = -4y_1 + 3y_2$ s.t. $-7y_1 - 3y_2 \ge 3$, $2y_1 + y_2 \ge 4$, $y_1, y_2 \ge 0$
+    b) Max $w = -4y_1 + 3y_2$ s.t. $-7y_1 - 3y_2 \le 3$, $2y_1 + y_2 \le 4$, $y_1, y_2 \ge 0$
+    c) Min $w = 4y_1 + 3y_2$ s.t. $7y_1 - 3y_2 \ge 3$, $-2y_1 + y_2 \ge 4$, $y_1, y_2 \ge 0$
+    d) Min $w = 3y_1 + 4y_2$ s.t. $7y_1 - 2y_2 \ge -4$, $-3y_1 + y_2 \ge 3$, $y_1, y_2 \ge 0$
 
 *Source: Lecture 15 homework*
 

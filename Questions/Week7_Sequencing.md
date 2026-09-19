@@ -10,38 +10,38 @@ Q1-Q5 are single-correct MCQ. Q6-Q8 expect a number (with unit). Q9-Q10 are shor
 
 **Q1.** _____ is the order in which a job has to be processed on different machines. *Source: Lecture 35 quiz Q1*
 
-  - a) Idle time
-  - b) Processing order
-  - c) Total elapsed time
-  - d) No-passing rule
+    a) Idle time
+    b) Processing order
+    c) Total elapsed time
+    d) No-passing rule
 
 **Q2.** An $n$ jobs x $3$ machines problem (order ABC) can be reduced to two fictitious machines only if: *Source: Lecture 35 quiz Q5 (also Lecture 32)*
 
-  - a) $\min_i A_i \ge \max_i B_i$ or $\min_i C_i \ge \max_i B_i$
-  - b) $\min_i B_i \ge \max_i A_i$ or $\min_i B_i \ge \max_i C_i$
-  - c) $\sum_i A_i = \sum_i B_i = \sum_i C_i$
-  - d) $\max_i A_i \le \min_i B_i$ and $\max_i C_i \le \min_i B_i$
+    a) $\min_i A_i \ge \max_i B_i$ or $\min_i C_i \ge \max_i B_i$
+    b) $\min_i B_i \ge \max_i A_i$ or $\min_i B_i \ge \max_i C_i$
+    c) $\sum_i A_i = \sum_i B_i = \sum_i C_i$
+    d) $\max_i A_i \le \min_i B_i$ and $\max_i C_i \le \min_i B_i$
 
 **Q3.** In the graphical method for $2$ jobs x $m$ machines, moving to the right (horizontal segment) means: *Source: Lecture 35 quiz Q9 (also Lecture 33)*
 
-  - a) both jobs are processing simultaneously
-  - b) job 1 is processing while job 2 is idle
-  - c) job 2 is processing while job 1 is idle
-  - d) both jobs are idle
+    a) both jobs are processing simultaneously
+    b) job 1 is processing while job 2 is idle
+    c) job 2 is processing while job 1 is idle
+    d) both jobs are idle
 
 **Q4.** Under Johnson's rule for $n$ jobs x $2$ machines (order AB), if the overall minimum processing time is $B_r$ (on machine B for job $r$), then:
 
-  - a) job $r$ is placed first
-  - b) job $r$ is placed last
-  - c) job $r$ is deleted from the problem
-  - d) job $r$ is placed in the middle
+    a) job $r$ is placed first
+    b) job $r$ is placed last
+    c) job $r$ is deleted from the problem
+    d) job $r$ is placed in the middle
 
 **Q5.** The six alternate optimum sequences of the Lecture 32 $n$ x $3$ example give: *Source: Lecture 32 exercise / Lecture 35 quiz Q6-Q7*
 
-  - a) different total elapsed times but equal per-machine idle times
-  - b) the same total elapsed time but different per-machine idle times
-  - c) the same total elapsed time and the same per-machine idle times
-  - d) different total elapsed times and different per-machine idle times
+    a) different total elapsed times but equal per-machine idle times
+    b) the same total elapsed time but different per-machine idle times
+    c) the same total elapsed time and the same per-machine idle times
+    d) different total elapsed times and different per-machine idle times
 
 **Q6.** Five jobs through machines A then B have times (hours) $A=[5,1,9,3,10]$, $B=[2,6,7,8,4]$. Using Johnson's rule, the minimum total elapsed time $T$ is _____ hours. *Source: Lecture 31 worked example*
 

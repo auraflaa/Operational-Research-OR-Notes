@@ -6,46 +6,46 @@ Coverage: asymmetric dual shortcuts ($=$ row $\to$ unrestricted $y$; unrestricte
 
 **Q1.** Weak duality (Min primal $f(X) = C^T X$, $AX \ge B$, $X \ge 0$; Max dual $w(Y) = B^T Y$, $A^T Y \le C$, $Y \ge 0$) states that for any feasible pair $X, Y$:
 
-  - a) $f(X) = w(Y)$
-  - b) $f(X) \le w(Y)$
-  - c) $f(X) \ge w(Y)$, with $f - w = \sum_j x_j y_{m+j} + \sum_i y_i x_{n+i} \ge 0$ after adding slacks/surpluses
-  - d) no comparison is possible unless both are optimal
+    a) $f(X) = w(Y)$
+    b) $f(X) \le w(Y)$
+    c) $f(X) \ge w(Y)$, with $f - w = \sum_j x_j y_{m+j} + \sum_i y_i x_{n+i} \ge 0$ after adding slacks/surpluses
+    d) no comparison is possible unless both are optimal
 
 *Source: Lecture 16 exercise*
 
 **Q2.** The primal Min $2x_1 - 11x_2$ s.t. $2x_1 + 3x_2 \ge 6$, $-x_1 \ge -5$, $x \ge 0$ is feasible with $f \to +\infty$. By weak-duality Corollary 3, its dual Max $6y_1 - 5y_2$ s.t. $2y_1 - y_2 \le 2$, $3y_1 \le -11$, $y \ge 0$ must be:
 
-  - a) feasible with equal value
-  - b) infeasible
-  - c) unbounded toward $-\infty$
-  - d) feasible with value $0$
+    a) feasible with equal value
+    b) infeasible
+    c) unbounded toward $-\infty$
+    d) feasible with value $0$
 
 *Source: Lecture 16 exercise*
 
 **Q3.** At the optimum of a symmetric Max-primal/Min-dual pair, if a primal variable $x_j > 0$ then:
 
-  - a) the corresponding dual variable equals $0$
-  - b) the corresponding dual constraint holds as an equality
-  - c) the corresponding primal constraint is a strict inequality
-  - d) the corresponding dual constraint is a strict inequality
+    a) the corresponding dual variable equals $0$
+    b) the corresponding dual constraint holds as an equality
+    c) the corresponding primal constraint is a strict inequality
+    d) the corresponding dual constraint is a strict inequality
 
 *Source: Lecture 17 exercise*
 
 **Q4.** The dual simplex method applies when the tableau is dual-feasible but primal-infeasible. The leaving and entering rules (Min convention of Lecture 19) are:
 
-  - a) leaving: most negative RHS; entering: maximum ratio $\Delta_j / a_{rj}$ over $a_{rj} < 0$ in the pivot row
-  - b) leaving: largest positive $\Delta_j$; entering: minimum ratio $b_i / p_{ik}$ over $p_{ik} > 0$
-  - c) leaving: most negative $\Delta_j$; entering: minimum ratio over all columns
-  - d) leaving: smallest RHS; entering: first positive pivot-row entry
+    a) leaving: most negative RHS; entering: maximum ratio $\Delta_j / a_{rj}$ over $a_{rj} < 0$ in the pivot row
+    b) leaving: largest positive $\Delta_j$; entering: minimum ratio $b_i / p_{ik}$ over $p_{ik} > 0$
+    c) leaving: most negative $\Delta_j$; entering: minimum ratio over all columns
+    d) leaving: smallest RHS; entering: first positive pivot-row entry
 
 *Source: Lecture 19 exercise*
 
 **Q5.** In Lecture 20's product-mix example (Max $2x_1+3x_2+x_3$, optimum basis $\{x_1,x_2\} = (1,2)$, $Z^* = 8$), raising labour availability from $1$ to $2$ gives $(x_1,x_2) = (5,1)$, $Z = 13$. If overtime labour costs Rs $4$/unit, the shadow price of labour and the hiring decision are:
 
-  - a) shadow price $4$; indifferent
-  - b) shadow price $5$; profitable to hire since $5 > 4$
-  - c) shadow price $8$; hire regardless
-  - d) shadow price $2$; do not hire
+    a) shadow price $4$; indifferent
+    b) shadow price $5$; profitable to hire since $5 > 4$
+    c) shadow price $8$; hire regardless
+    d) shadow price $2$; do not hire
 
 **Q6.** Primal Max $3x_1 + 5x_2$ s.t. $x_1 + 2x_2 \le 20$, $x_1 + x_2 \le 15$, $x \ge 0$; dual Min $20y_1 + 15y_2$ s.t. $y_1 + y_2 \ge 3$, $2y_1 + y_2 \ge 5$, $y \ge 0$. Solve both graphically and report both optima plus the final simplex multipliers.
 

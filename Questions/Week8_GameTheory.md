@@ -10,38 +10,38 @@ Q1-Q5 are single-correct MCQ. Q6-Q8 expect a number (exact fraction). Q9-Q10 are
 
 **Q1.** In a two-person zero-sum game: *Source: Lecture 40 quiz Q2*
 
-  - a) both players jointly maximize the total payoff
-  - b) the gain of one player equals the loss of the other, so the total is zero
-  - c) the value of the game is always zero
-  - d) communication between players before play is assumed
+    a) both players jointly maximize the total payoff
+    b) the gain of one player equals the loss of the other, so the total is zero
+    c) the value of the game is always zero
+    d) communication between players before play is assumed
 
 **Q2.** "Every matrix game has a saddle point." *Source: Lecture 40 quiz Q3*
 
-  - a) True, and pure strategies are then always optimal
-  - b) True, by the fundamental theorem of rectangular games
-  - c) False; games without a saddle point are solved by mixed strategies
-  - d) False; games without a saddle point have no value
+    a) True, and pure strategies are then always optimal
+    b) True, by the fundamental theorem of rectangular games
+    c) False; games without a saddle point are solved by mixed strategies
+    d) False; games without a saddle point have no value
 
 **Q3.** A game with maximin = minimax = $0$ is called _____, and a game with maximin = minimax = $V$ (saddle exists) is called _____. *Source: Lecture 40 quiz Q10-Q11 (also Lecture 36)*
 
-  - a) strictly determinable; fair
-  - b) fair; strictly determinable
-  - c) mixed; pure
-  - d) rectangular; fair
+    a) strictly determinable; fair
+    b) fair; strictly determinable
+    c) mixed; pure
+    d) rectangular; fair
 
 **Q4.** For $A=\begin{pmatrix}a_{11} & a_{12}\\ a_{21} & a_{22}\end{pmatrix}$ with no saddle and $D=a_{11}+a_{22}-a_{12}-a_{21} \ne 0$, the optimal row mix is:
 
-  - a) $p_1=(a_{22}-a_{21})/D$, $p_2=1-p_1$
-  - b) $p_1=(a_{11}-a_{12})/D$, $p_2=1-p_1$
-  - c) $p_1=(a_{22}-a_{12})/D$, $p_2=1-p_1$
-  - d) $p_1=a_{11}/(a_{11}+a_{22})$, $p_2=1-p_1$
+    a) $p_1=(a_{22}-a_{21})/D$, $p_2=1-p_1$
+    b) $p_1=(a_{11}-a_{12})/D$, $p_2=1-p_1$
+    c) $p_1=(a_{22}-a_{12})/D$, $p_2=1-p_1$
+    d) $p_1=a_{11}/(a_{11}+a_{22})$, $p_2=1-p_1$
 
 **Q5.** The graphical method can be used to solve a $4 \times 2$ game. *Source: Lecture 40 quiz Q6*
 
-  - a) True — it is in the $m \times 2$ family: plot one line per A-row in $y$ and minimize the upper envelope
-  - b) True — by plotting four lines and maximizing the lower envelope
-  - c) False — graphics only works for $2 \times 2$ games
-  - d) False — graphics only works for $2 \times n$ games
+    a) True — it is in the $m \times 2$ family: plot one line per A-row in $y$ and minimize the upper envelope
+    b) True — by plotting four lines and maximizing the lower envelope
+    c) False — graphics only works for $2 \times 2$ games
+    d) False — graphics only works for $2 \times n$ games
 
 **Q6.** For $A=\begin{pmatrix}1 & 3\\ 10 & 2\end{pmatrix}$ there is no saddle point. The value of the game is $V=$ _____ (exact fraction). *Source: Lecture 38 Case-1 worked example (oddments)*
 
