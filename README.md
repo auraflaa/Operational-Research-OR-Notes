@@ -21,6 +21,8 @@ Start here: [`Notes/README.md`](Notes/README.md) (index + exam strategy), then r
 - Graphs: run `Notes/figures/make_graphs.py` (requires `matplotlib`, `seaborn`).
 - Flowcharts: edit a `.tex` source in `Notes/figures/tex/`, compile with a LaTeX engine (e.g. Tectonic: `tectonic -o <dir> <file>.tex`), convert the PDF to PNG.
 
-## Source credit
+## Source credit and license
 
-Lecture content belongs to NPTEL / Prof. Kusum Deep, IIT Roorkee. These notes are a personal study aid.
+Lecture content belongs to NPTEL / Prof. Kusum Deep, IIT Roorkee. These notes are an independent study aid.
+The notes, transcript formatting, figures and scripts in this repository are licensed under
+[CC BY-SA 4.0](LICENSE) — share freely with attribution, and share adaptations under the same terms.
