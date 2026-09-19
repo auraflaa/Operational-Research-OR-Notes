@@ -15,16 +15,16 @@
 
 ![Saddle-point check workflow](figures/m5_01_game_workflow.png)
 
-![5x4 saddle example](../transcribe_md/images/lec36/lec36.pdf-0010-02.png)
+![5x4 saddle example](../transcripts/images/lec36/lec36.pdf-0010-02.png)
 *Payoff table for Lec 36 Example 1 with row minima and column maxima.*
 
-![3x3 no-saddle example](../transcribe_md/images/lec36/lec36.pdf-0012-06.png)
+![3x3 no-saddle example](../transcripts/images/lec36/lec36.pdf-0012-06.png)
 *Payoff table for Lec 36 Example 2 with maximin not equal minimax.*
 
-![Saddle point definition](../transcribe_md/images/lec36/lec36.pdf-0013-02.png)
+![Saddle point definition](../transcripts/images/lec36/lec36.pdf-0013-02.png)
 *Slide definition of saddle point and value of game.*
 
-![Value bounds and fair game](../transcribe_md/images/lec36/lec36.pdf-0016-00.png)
+![Value bounds and fair game](../transcripts/images/lec36/lec36.pdf-0016-00.png)
 *Slide with value bounds and fair versus strictly determinable definitions.*
 
 ### 36.1 Game vocabulary
@@ -94,19 +94,19 @@ Worked logic (Lec 36 Example 1, $5 \times 4$ matrix): row minima $-4,-1,-2,-3,-3
 
 **Why it matters:** theorems justify mixed strategies and LP duality; dominance shrinks solvable games.
 
-![Theorem 1 max-min inequality](../transcribe_md/images/lec37/lec37.pdf-0001-04.png)
+![Theorem 1 max-min inequality](../transcripts/images/lec37/lec37.pdf-0001-04.png)
 *Slide statement of Theorem 1 and matrix corollary.*
 
-![Theorem 2 saddle existence](../transcribe_md/images/lec37/lec37.pdf-0002-03.png)
+![Theorem 2 saddle existence](../transcripts/images/lec37/lec37.pdf-0002-03.png)
 *Slide statement of necessary and sufficient saddle condition.*
 
-![Expected payoff definition](../transcribe_md/images/lec37/lec37.pdf-0005-01.png)
+![Expected payoff definition](../transcripts/images/lec37/lec37.pdf-0005-01.png)
 *Slide definition of expected payoff E of X and Y.*
 
-![Row dominance rule](../transcribe_md/images/lec37/lec37.pdf-0014-00.png)
+![Row dominance rule](../transcripts/images/lec37/lec37.pdf-0014-00.png)
 *Slide statement of row dominance rule for player A.*
 
-![Dominance 4x4 example](../transcribe_md/images/lec37/lec37.pdf-0016-02.png)
+![Dominance 4x4 example](../transcripts/images/lec37/lec37.pdf-0016-02.png)
 *Slide payoff table for 4x4 dominance reduction example.*
 
 ### 37.1 Max-min inequality and saddle-point theorems (precise statements)
@@ -199,19 +199,19 @@ $$\begin{pmatrix}4&2&4\\2&4&0\\4&0&8\end{pmatrix}.$$
 
 **Why it matters:** oddments avoids formula memory; graphs reduce larger games to $2 \times 2$.
 
-![2x2 optimum formulas](../transcribe_md/images/lec38/lec38.pdf-0002-02.png)
+![2x2 optimum formulas](../transcripts/images/lec38/lec38.pdf-0002-02.png)
 *Slide formulas for p1, p2, q1, q2 and value V.*
 
-![Oddments worked table](../transcribe_md/images/lec38/lec38.pdf-0004-00.png)
+![Oddments worked table](../transcripts/images/lec38/lec38.pdf-0004-00.png)
 *Slide oddments table for 1,3,10,2 example.*
 
-![2xn lines plot](../transcribe_md/images/lec38/lec38.pdf-0011-01.png)
+![2xn lines plot](../transcripts/images/lec38/lec38.pdf-0011-01.png)
 *Slide plot of four expected lines with lower envelope.*
 
-![P2 two-line plot](../transcribe_md/images/lec38/lec38.pdf-0014-02.png)
+![P2 two-line plot](../transcripts/images/lec38/lec38.pdf-0014-02.png)
 *Slide plot for P2 strategies on surviving columns.*
 
-![mx2 oddments table](../transcribe_md/images/lec38/lec38.pdf-0020-00.png)
+![mx2 oddments table](../transcripts/images/lec38/lec38.pdf-0020-00.png)
 *Slide oddments table for reduced 6x2 game.*
 
 ### 38.1 Case 1: $2 \times 2$ mixed game — formulas and oddments recipe
@@ -282,19 +282,19 @@ Condensed worked example (Lec 38, $6 \times 2$): Given: maximin $3$, minimax $4$
 
 ![Game to LP pipeline](figures/m5_04_game_lp_pipe.png)
 
-![Matching coins matrix](../transcribe_md/images/lec39/lec39.pdf-0005-04.png)
+![Matching coins matrix](../transcripts/images/lec39/lec39.pdf-0005-04.png)
 *Slide payoff matrix for matching coins example.*
 
-![V sign handling](../transcribe_md/images/lec39/lec39.pdf-0012-05.png)
+![V sign handling](../transcripts/images/lec39/lec39.pdf-0012-05.png)
 *Slide rule for V greater than 0, V less than 0, and V equal 0.*
 
-![A LP form](../transcribe_md/images/lec39/lec39.pdf-0014-00.png)
+![A LP form](../transcripts/images/lec39/lec39.pdf-0014-00.png)
 *Slide LP for player A with min sum x.*
 
-![B LP form](../transcribe_md/images/lec39/lec39.pdf-0014-03.png)
+![B LP form](../transcripts/images/lec39/lec39.pdf-0014-03.png)
 *Slide LP for player B with max sum y.*
 
-![3x3 shift by 4](../transcribe_md/images/lec39/lec39.pdf-0017-04.png)
+![3x3 shift by 4](../transcripts/images/lec39/lec39.pdf-0017-04.png)
 *Slide 3x3 matrix shifted by constant 4.*
 
 ### 39.1 Algebraic (equation) method
@@ -345,19 +345,19 @@ Condensed $3 \times 3$ LP example (Lec 39): Given: original $\begin{pmatrix}1&-1
 
 **Why it matters:** case studies combine saddle, dominance, equations, and LP in one workflow.
 
-![Ram Raja matrix](../transcribe_md/images/lec40/lec40.pdf-0002-00.png)
+![Ram Raja matrix](../transcripts/images/lec40/lec40.pdf-0002-00.png)
 *Slide 3x3 payoff matrix for Ram Raja game.*
 
-![ABC payoff matrix](../transcribe_md/images/lec40/lec40.pdf-0004-02.png)
+![ABC payoff matrix](../transcripts/images/lec40/lec40.pdf-0004-02.png)
 *Slide payoff matrix for ABC versus XYZ advertising game.*
 
-![ABC expected equations](../transcribe_md/images/lec40/lec40.pdf-0008-03.png)
+![ABC expected equations](../transcripts/images/lec40/lec40.pdf-0008-03.png)
 *Slide expected gain equations for ABC store.*
 
-![XYZ LP solution](../transcribe_md/images/lec40/lec40.pdf-0018-00.png)
+![XYZ LP solution](../transcripts/images/lec40/lec40.pdf-0018-00.png)
 *Slide optimum y solution for XYZ store.*
 
-![Quiz answers](../transcribe_md/images/lec40/lec40.pdf-0022-03.png)
+![Quiz answers](../transcripts/images/lec40/lec40.pdf-0022-03.png)
 *Slide answers for first quiz questions.*
 
 ### 40.1 Case study 1: Ram-Raja number game ($3 \times 3 \rightarrow 2 \times 2$ by identical-strategy dominance)

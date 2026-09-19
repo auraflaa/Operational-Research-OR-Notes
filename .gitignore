@@ -1,5 +1,5 @@
 # Source lecture PDFs (kept locally, not pushed)
-Transcribes/
+source_pdfs/
 
 # Build / tooling artefacts
 convert_log.txt

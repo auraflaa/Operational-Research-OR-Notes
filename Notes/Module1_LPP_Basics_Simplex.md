@@ -82,11 +82,11 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the generic transportation cost table:
 - The table below shows sources, destinations, unit costs, supply column and demand row.
 
-![Transportation cost table with supply and demand](../transcribe_md/images/lec2/lec2.pdf-0002-03.png)
+![Transportation cost table with supply and demand](../transcripts/images/lec2/lec2.pdf-0002-03.png)
 - Slide-image reference for the TSP cost matrix with blanks on the diagonal and missing links:
 - The matrix below shows asymmetric costs, blank diagonal entries, and no link between city 1 and city 5.
 
-![Travelling salesman cost matrix with missing links](../transcribe_md/images/lec2/lec2.pdf-0006-00.png)
+![Travelling salesman cost matrix with missing links](../transcripts/images/lec2/lec2.pdf-0006-00.png)
 
 ### 2.1 Transportation problem
 - $x_{ij}$ = units from source $i$ to destination $j$ ($\geq 0$, integer). Min $\sum c_{ij}x_{ij}$ s.t. row (supply) sums = supply $s_i$ (e.g. $x_{11}+x_{12}+x_{13}+x_{14} = 70$), column (demand) sums = demand $d_j$ (e.g. $x_{11}+x_{21}+x_{31} = 40$). Full Lec-12 wheat example is in Sec. 12.
@@ -130,19 +130,19 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the unique-solution plot with shaded region and iso-lines:
 - The graph below shows lines through 0 5 and 5 0 plus 0 3 and 8 0, shaded feasible region OABC, and parallel objective lines farthest at C.
 
-![Unique solution feasible region OABC with optimum at C 5 0](../transcribe_md/images/lec3/lec3.pdf-0003-03.png)
+![Unique solution feasible region OABC with optimum at C 5 0](../transcripts/images/lec3/lec3.pdf-0003-03.png)
 - Slide-image reference for the multiple-solution plot where objective lines overlap edge AB:
 - The graph below shows the same region with objective family parallel to the second constraint, optimum on segment AB.
 
-![Multiple solution with optimum on segment AB](../transcribe_md/images/lec3/lec3.pdf-0006-00.png)
+![Multiple solution with optimum on segment AB](../transcripts/images/lec3/lec3.pdf-0006-00.png)
 - Slide-image reference for the unbounded plot open to the right:
 - The graph below shows region O A B C open in plus x1 direction with improving objective lines.
 
-![Unbounded feasible region open to the right](../transcribe_md/images/lec3/lec3.pdf-0008-02.png)
+![Unbounded feasible region open to the right](../transcripts/images/lec3/lec3.pdf-0008-02.png)
 - Slide-image reference for the infeasible plot with parallel non-overlapping strips:
 - The graph below shows line below x1 plus x2 equals 5 and line above x1 plus x2 equals 6 with no overlap.
 
-![Infeasible parallel strips with no common region](../transcribe_md/images/lec3/lec3.pdf-0011-02.png)
+![Infeasible parallel strips with no common region](../transcripts/images/lec3/lec3.pdf-0011-02.png)
 
 ### 3.1 Procedure
 1. Plot each constraint as equality line (two intercepts). Shade feasible side: substitute origin $(0,0)$; if it satisfies the inequality, feasible side contains origin (if line passes through origin, use another test point e.g. $(5,0)$).
@@ -188,15 +188,15 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for convex-set examples:
 - The slide below shows six shapes where every segment between two points stays inside.
 
-![Convex set examples including box and discs](../transcribe_md/images/lec4/lec4.pdf-0002-04.png)
+![Convex set examples including box and discs](../transcripts/images/lec4/lec4.pdf-0002-04.png)
 - Slide-image reference for non-convex examples:
 - The slide below shows shapes where one segment leaves the set.
 
-![Non convex set counterexamples](../transcribe_md/images/lec4/lec4.pdf-0003-02.png)
+![Non convex set counterexamples](../transcripts/images/lec4/lec4.pdf-0003-02.png)
 - Slide-image reference for convex hull of an L-shaped non-convex set:
 - The slide below shows an L-shape on the left and its smallest convex cover on the right.
 
-![Convex hull of L shaped set](../transcribe_md/images/lec4/lec4.pdf-0011-02.png)
+![Convex hull of L shaped set](../transcripts/images/lec4/lec4.pdf-0011-02.png)
 
 ![Chord test recreated: green chord stays inside the convex hexagon, red dashed chord exits the L-shape](figures/g_convex_nonconvex.png)
 
@@ -249,7 +249,7 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the initial simplex tableau layout:
 - The slide below shows basis column, top c row, constraint block, RHS, and deviation row.
 
-![Initial simplex tableau with BFS x4 8 and x5 7](../transcribe_md/images/lec5/lec5.pdf-0012-00.png)
+![Initial simplex tableau with BFS x4 8 and x5 7](../transcripts/images/lec5/lec5.pdf-0012-00.png)
 
 ### 5.1 Standard form
 - Max $z = \sum c_j x_j$ s.t. $\sum_j a_{ij}x_j = b_i$, $x_j \geq 0$, with $b_i \geq 0$. Differences from general form: (1) Max only (Min $\to$ Max by negating), (2) all equalities, (3) all $b_i \geq 0$.
@@ -307,7 +307,7 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the Big-M initial tableau:
 - The slide below shows basis x4 x6 x7, top costs with minus M, and first deviation row.
 
-![Big M initial tableau with artificials x6 x7](../transcribe_md/images/lec6/lec6.pdf-0006-00.png)
+![Big M initial tableau with artificials x6 x7](../transcripts/images/lec6/lec6.pdf-0006-00.png)
 
 ### 6.3 Lec-6 exercises [statements from transcript]
 1. Given Min $x_1+2x_2+x_3$ s.t. $2x_1+x_2+x_3 \leq 2$, $3x_1+4x_2+2x_3 \geq 16$, $x \geq 0$. Steps: convert to Max; add slack in row 1; subtract surplus plus artificial in row 2; penalise artificial by $-M$; run simplex. Answer: student drill [same structure as running example].
@@ -351,11 +351,11 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the multiple-solution feasible region with five vertices:
 - The graph below shows feasible polygon with vertices A B C D E and optimum edge BC.
 
-![Multiple solution feasible region with edge BC optimal](../transcribe_md/images/lec8/lec8.pdf-0006-00.png)
+![Multiple solution feasible region with edge BC optimal](../transcripts/images/lec8/lec8.pdf-0006-00.png)
 - Slide-image reference for the vertex value table:
 - The table below shows objective values 40 at A, 48 at B, 48 at C, 18 at D, 12 at E.
 
-![Vertex objective table showing maxima at B and C](../transcribe_md/images/lec8/lec8.pdf-0007-00.png)
+![Vertex objective table showing maxima at B and C](../transcripts/images/lec8/lec8.pdf-0007-00.png)
 
 ### 8.1 Recognition
 - Graphical: objective iso-line parallel to a binding constraint edge; optimum attained on whole edge. Pre-check: compare slopes of $z$ and constraints.
@@ -383,11 +383,11 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the unbounded graph and corner table:
 - The slide below shows open region with vertices A 0 4 and B 5 two thirds and parametrised edge points.
 
-![Unbounded region with vertices A and B](../transcribe_md/images/lec9/lec9.pdf-0003-03.png)
+![Unbounded region with vertices A and B](../transcripts/images/lec9/lec9.pdf-0003-03.png)
 - Slide-image reference for unbounded region with finite value:
 - The slide below shows open-upward region with constant value 12 on edge through B 5 halves 3 halves.
 
-![Unbounded region but finite optimum value 12](../transcribe_md/images/lec9/lec9.pdf-0012-03.png)
+![Unbounded region but finite optimum value 12](../transcripts/images/lec9/lec9.pdf-0012-03.png)
 
 ### 9.1 Recognition
 - Graphical: feasible region open in the improving direction; iso-lines can be pushed to $\infty$. Corner table: a point $P(t)$ on the open edge gives $z(t) \to \infty$.
@@ -415,7 +415,7 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the degeneracy plot with three lines through B:
 - The graph below shows constraints x1 plus x2 equals 5, 3x1 plus 8x2 equals 24, 9x1 plus 34x2 equals 90 concurrent at B.
 
-![Degenerate vertex with three concurrent constraints](../transcribe_md/images/lec10/lec10.pdf-0008-05.png)
+![Degenerate vertex with three concurrent constraints](../transcripts/images/lec10/lec10.pdf-0008-05.png)
 
 ### 10.1 Infeasible — recognition
 - Graphical: constraint half-spaces do not overlap (e.g. $x_1+x_2 \leq 5$ vs $\geq 6$).
@@ -446,7 +446,7 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the basis-inverse observation:
 - The slide below shows the pink initial basis matrix and blue final matrix whose product is identity.
 
-![Basis matrix and inverse product identity observation](../transcribe_md/images/lec11/lec11.pdf-0005-02.png)
+![Basis matrix and inverse product identity observation](../transcripts/images/lec11/lec11.pdf-0005-02.png)
 
 ### 11.1 Idea
 - Full tableau recomputes many columns; only $B^{-1}$, RHS, and entering column are needed. Keep basis inverse explicitly: $\bar{b} = B^{-1}b$, $\bar{P}_k = B^{-1}P_k$, deviations $\bar{c}_j = c_j - \pi P_j$ with simplex multipliers $\pi = c_B B^{-1}$. Less memory/computation; $\pi$ later solves the dual and drives sensitivity analysis.
@@ -481,11 +481,11 @@ Notation used throughout: decision variables $x_1, x_2, \dots, x_n$; objective c
 - Slide-image reference for the wheat transportation cost table:
 - The table below shows Phillor Hoshiarpur Nakodar supplies 7 9 2 and Delhi Mumbai Chennai Calcutta demands.
 
-![Wheat transportation cost supply demand table](../transcribe_md/images/lec12/lec12.pdf-0002-03.png)
+![Wheat transportation cost supply demand table](../transcripts/images/lec12/lec12.pdf-0002-03.png)
 - Slide-image reference for the dog-feed graphical solution:
 - The graph below shows constraints 4x1 plus 5x2 equals 16, 2x1 plus x2 equals 4, x2 equals 2x1, with corners A B C.
 
-![Dog feed feasible region with corners A B C](../transcribe_md/images/lec12/lec12.pdf-0007-00.png)
+![Dog feed feasible region with corners A B C](../transcripts/images/lec12/lec12.pdf-0007-00.png)
 
 ### 12.1 Transportation LP — wheat (Lec 12)
 - $x_{ij}$ = quintals from $\{Phillor, Hoshiarpur, Nakodar\}$ to $\{Delhi, Mumbai, Chennai, Calcutta\}$. Min $\sum c_{ij}x_{ij}$ (e.g. $x_{11}+4x_{12}+7x_{13}+3x_{14}+7x_{21}+2x_{22}+\dots$ from cost table) s.t. supply rows $\leq$ (or $=$) availability $(7,9,2)$, demand columns $\geq$ requirements $(7/8,4,6,1$ per slide/table$)$, $x_{ij} \geq 0$. 12 variables.

@@ -93,16 +93,16 @@ Interpretation: a middleman (Parveen) offers to buy all warehouse stock at price
 
 Key slide figures:
 
-![Symmetric primal-dual pair with color coding](../transcribe_md/images/lec15/lec15.pdf-0002-02.png)
+![Symmetric primal-dual pair with color coding](../transcripts/images/lec15/lec15.pdf-0002-02.png)
 *Color-coded max primal and min dual showing swapped cost and RHS.*
 
-![Vector notation for symmetric pair](../transcribe_md/images/lec15/lec15.pdf-0006-03.png)
+![Vector notation for symmetric pair](../transcripts/images/lec15/lec15.pdf-0006-03.png)
 *Vector form max C transpose X with AX LE B and min B transpose Y with AT Y GE C.*
 
-![Transport cost table for Rajan example](../transcribe_md/images/lec15/lec15.pdf-0011-03.png)
+![Transport cost table for Rajan example](../transcripts/images/lec15/lec15.pdf-0011-03.png)
 *Supply demand and unit cost table for 2 warehouses and 3 outlets.*
 
-![Dual of the transport problem](../transcribe_md/images/lec15/lec15.pdf-0013-02.png)
+![Dual of the transport problem](../transcripts/images/lec15/lec15.pdf-0013-02.png)
 *Five-variable max dual with six LE constraints from the transport primal.*
 
 ## 2. Asymmetric Primal-Dual and Weak Duality (Lec 16)
@@ -153,16 +153,16 @@ since every variable is $\geq 0$. Hence $f \geq w$. The vector proof is identica
 
 Key slide figures:
 
-![Expanded three-row GE primal form](../transcribe_md/images/lec16/lec16.pdf-0004-02.png)
+![Expanded three-row GE primal form](../transcripts/images/lec16/lec16.pdf-0004-02.png)
 *Equality split into two rows and normalized to GE form before dual writing.*
 
-![Weak duality statement](../transcribe_md/images/lec16/lec16.pdf-0008-01.png)
+![Weak duality statement](../transcripts/images/lec16/lec16.pdf-0008-01.png)
 *Min primal feasible value GE max dual feasible value for any feasible pair.*
 
-![Unbounded primal feasible region graph](../transcribe_md/images/lec16/lec16.pdf-0015-00.png)
+![Unbounded primal feasible region graph](../transcripts/images/lec16/lec16.pdf-0015-00.png)
 *Primal feasible but objective going to plus infinity.*
 
-![Infeasible dual graph](../transcribe_md/images/lec16/lec16.pdf-0016-02.png)
+![Infeasible dual graph](../transcripts/images/lec16/lec16.pdf-0016-02.png)
 *Corresponding dual with no feasible point.*
 
 ## 3. Optimality Criterion, Strong Duality, Complementary Slackness (Lec 17)
@@ -221,13 +221,13 @@ At the optimum only (not for general feasible points), for max-primal/min-dual:
 
 Key slide figures:
 
-![Optimality criterion example](../transcribe_md/images/lec17/lec17.pdf-0002-04.png)
+![Optimality criterion example](../transcripts/images/lec17/lec17.pdf-0002-04.png)
 *Four-variable primal and two-variable dual with equal value 28.*
 
-![Complementary slackness statement](../transcribe_md/images/lec17/lec17.pdf-0004-02.png)
+![Complementary slackness statement](../transcripts/images/lec17/lec17.pdf-0004-02.png)
 *Matrix condition for symmetric optimal pair.*
 
-![Primal-dual summary table](../transcribe_md/images/lec17/lec17.pdf-0010-00.png)
+![Primal-dual summary table](../transcripts/images/lec17/lec17.pdf-0010-00.png)
 *Complete constraint-to-variable and variable-to-constraint sign map.*
 
 ## 4. Simplex Multipliers and Primal-Dual Solution Correspondence (Lec 18)
@@ -268,13 +268,13 @@ Mechanically: $B^{-1}$ is the matrix sitting under the initial identity/slack co
 
 Key slide figures:
 
-![Initial versus final tableau](../transcribe_md/images/lec18/lec18.pdf-0009-00.png)
+![Initial versus final tableau](../transcripts/images/lec18/lec18.pdf-0009-00.png)
 *Basis change from slacks and artificials to x3 x4 x1 x2.*
 
-![Primal feasible basis definition](../transcribe_md/images/lec18/lec18.pdf-0013-00.png)
+![Primal feasible basis definition](../transcripts/images/lec18/lec18.pdf-0013-00.png)
 *Feasibility as B inverse b GE 0 and optimality as deviation GE 0.*
 
-![Graphical primal and dual solutions](../transcribe_md/images/lec18/lec18.pdf-0016-02.png)
+![Graphical primal and dual solutions](../transcripts/images/lec18/lec18.pdf-0016-02.png)
 *Primal optimum 10 5 and dual optimum 2 1 both with value 55.*
 
 ## 5. Dual Simplex Method (Lec 19)
@@ -321,19 +321,19 @@ Note the two reversals versus primal simplex: leaving variable first (most negat
 
 Reference slide tableaux:
 
-![Negative RHS starting tableau](../transcribe_md/images/lec19/lec19.pdf-0008-02.png)
+![Negative RHS starting tableau](../transcripts/images/lec19/lec19.pdf-0008-02.png)
 *Rows multiplied by minus one giving basic values minus 3 and minus 2.*
 
-![Initial dual simplex tableau](../transcribe_md/images/lec19/lec19.pdf-0009-01.png)
+![Initial dual simplex tableau](../transcripts/images/lec19/lec19.pdf-0009-01.png)
 *Basis x5 x6 with deviations 1 4 0 3 0 0.*
 
-![Second tableau after x1 enters](../transcribe_md/images/lec19/lec19.pdf-0013-00.png)
+![Second tableau after x1 enters](../transcripts/images/lec19/lec19.pdf-0013-00.png)
 *Basis x1 x6 with RHS 3 and minus 8.*
 
-![Final feasible optimum tableau](../transcribe_md/images/lec19/lec19.pdf-0014-04.png)
+![Final feasible optimum tableau](../transcripts/images/lec19/lec19.pdf-0014-04.png)
 *Basis x1 x3 with RHS 7 and 4 and value 7.*
 
-![Leaving variable rule slide](../transcribe_md/images/lec19/lec19.pdf-0011-00.png)
+![Leaving variable rule slide](../transcripts/images/lec19/lec19.pdf-0011-00.png)
 *Most negative RHS leaves and max ratio over negative row entries enters.*
 
 ## 6. Sensitivity Analysis I: $c_j$ and $b_i$ Changes (Lec 20)
@@ -371,19 +371,19 @@ Range for labour availability $d$ (new RHS $(d,3)$): need $B^{-1}(d,3)^T = (4d-3
 
 Reference tableaux:
 
-![Initial and optimum tableaux](../transcribe_md/images/lec20/lec20.pdf-0004-02.png)
+![Initial and optimum tableaux](../transcripts/images/lec20/lec20.pdf-0004-02.png)
 *Slack basis x4 x5 evolving to optimum basis x1 x2 with value 8.*
 
-![Nonbasic cost range for product C](../transcribe_md/images/lec20/lec20.pdf-0005-03.png)
+![Nonbasic cost range for product C](../transcripts/images/lec20/lec20.pdf-0005-03.png)
 *Deviation c3 minus 4 forcing c3 LE 4 for max optimality.*
 
-![Basic cost range for c1](../transcribe_md/images/lec20/lec20.pdf-0008-00.png)
+![Basic cost range for c1](../transcripts/images/lec20/lec20.pdf-0008-00.png)
 *All nonbasic deviations expressed in c1 giving 3 over 4 to 3.*
 
-![Shadow price definition](../transcribe_md/images/lec20/lec20.pdf-0014-02.png)
+![Shadow price definition](../transcripts/images/lec20/lec20.pdf-0014-02.png)
 *Profit increase per unit resource while basis is unchanged.*
 
-![Labour range derivation](../transcribe_md/images/lec20/lec20.pdf-0015-00.png)
+![Labour range derivation](../transcripts/images/lec20/lec20.pdf-0015-00.png)
 *B inverse times d 3 nonnegative giving 3 over 4 to 3.*
 
 ## 7. Sensitivity Analysis II: $a_{ij}$, New/Deleted Variables and Constraints (Lec 21)
@@ -447,13 +447,13 @@ Apply changes sequentially one type at a time (linearity makes the cumulative ef
 
 Key slide figures:
 
-![Initial and final tables reused](../transcribe_md/images/lec21/lec21.pdf-0004-01.png)
+![Initial and final tables reused](../transcripts/images/lec21/lec21.pdf-0004-01.png)
 *Same labour material example carried from Lec 20.*
 
-![New product profitability test](../transcribe_md/images/lec21/lec21.pdf-0007-00.png)
+![New product profitability test](../transcripts/images/lec21/lec21.pdf-0007-00.png)
 *Delta 6 as c6 minus pi P6 deciding entry.*
 
-![New constraint feasibility test](../transcribe_md/images/lec21/lec21.pdf-0010-00.png)
+![New constraint feasibility test](../transcripts/images/lec21/lec21.pdf-0010-00.png)
 *Substituting 1 2 0 into x1 plus 2 x2 plus x3 LE 10.*
 
 ## 8. Case Studies and Quiz Review (Lec 22-23)
@@ -493,16 +493,16 @@ Why it matters: these are the exact patterns and traps reused in quizzes.
 
 Key slide figures:
 
-![Unbounded primal graph](../transcribe_md/images/lec22/lec22.pdf-0004-03.png)
+![Unbounded primal graph](../transcripts/images/lec22/lec22.pdf-0004-03.png)
 *Ray t t plus 1 with value 7t plus 4 going to infinity.*
 
-![Simplex tableaux for tableau reading](../transcribe_md/images/lec22/lec22.pdf-0006-03.png)
+![Simplex tableaux for tableau reading](../transcripts/images/lec22/lec22.pdf-0006-03.png)
 *Three tableaux ending at basis x1 x2 x5 with value 18.*
 
-![Dual simplex tableaux](../transcribe_md/images/lec23/lec23.pdf-0002-02.png)
+![Dual simplex tableaux](../transcripts/images/lec23/lec23.pdf-0002-02.png)
 *Four-row surplus basis with most negative minus 17 leaving first.*
 
-![Sensitivity RHS and cost study](../transcribe_md/images/lec23/lec23.pdf-0004-02.png)
+![Sensitivity RHS and cost study](../transcripts/images/lec23/lec23.pdf-0004-02.png)
 *New RHS 10 12 14 and cost 2 plus delta analysis.*
 
 ### 8.6 Module quiz with answers (Lec 23, all 15 questions)
@@ -527,13 +527,13 @@ Key slide figures:
 
 Quiz slide sources:
 
-![Quiz questions part 1](../transcribe_md/images/lec23/lec23.pdf-0006-00.png)
+![Quiz questions part 1](../transcripts/images/lec23/lec23.pdf-0006-00.png)
 *Questions 1 to 4 on dual of dual and unboundedness.*
 
-![Quiz questions part 2](../transcribe_md/images/lec23/lec23.pdf-0007-04.png)
+![Quiz questions part 2](../transcripts/images/lec23/lec23.pdf-0007-04.png)
 *Questions 10 to 13 on slackness and shadow prices.*
 
-![Quiz answers part 1](../transcribe_md/images/lec23/lec23.pdf-0009-00.png)
+![Quiz answers part 1](../transcripts/images/lec23/lec23.pdf-0009-00.png)
 *Answers 5 to 9 on bounds and simplex equivalence.*
 
 ## Key exam takeaways

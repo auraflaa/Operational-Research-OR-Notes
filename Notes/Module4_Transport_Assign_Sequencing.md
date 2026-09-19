@@ -135,11 +135,11 @@ Lecture exercise: 3 origins x 4 destinations, total supply = demand = $140$ (bal
 
 Key slide images:
 
-![Transportation model and balance condition](../transcribe_md/images/lec28/lec28.pdf-0003-02.png)
-![NW-corner final allocations cost 1015](../transcribe_md/images/lec28/lec28.pdf-0008-02.png)
-![VAM penalty and allocation rounds](../transcribe_md/images/lec28/lec28.pdf-0012-05.png)
-![Loop definition with cell sequence](../transcribe_md/images/lec28/lec28.pdf-0014-02.png)
-![MODI optimality table iteration](../transcribe_md/images/lec28/lec28.pdf-0016-03.png)
+![Transportation model and balance condition](../transcripts/images/lec28/lec28.pdf-0003-02.png)
+![NW-corner final allocations cost 1015](../transcripts/images/lec28/lec28.pdf-0008-02.png)
+![VAM penalty and allocation rounds](../transcripts/images/lec28/lec28.pdf-0012-05.png)
+![Loop definition with cell sequence](../transcripts/images/lec28/lec28.pdf-0014-02.png)
+![MODI optimality table iteration](../transcripts/images/lec28/lec28.pdf-0016-03.png)
 
 ## Lec 29 — Assignment Problem
 
@@ -220,11 +220,11 @@ $$Z^* = 7+6+6+8+9 = 36$$
 
 Key slide images:
 
-![Assignment formulation row and column sums](../transcribe_md/images/lec29/lec29.pdf-0002-00.png)
-![Row minima subtraction 5x5 example](../transcribe_md/images/lec29/lec29.pdf-0006-00.png)
-![Zero covering with horizontal and vertical lines](../transcribe_md/images/lec29/lec29.pdf-0008-00.png)
-![Adjustment with smallest uncovered 2](../transcribe_md/images/lec29/lec29.pdf-0011-00.png)
-![4x4 exercise hours table](../transcribe_md/images/lec29/lec29.pdf-0014-00.png)
+![Assignment formulation row and column sums](../transcripts/images/lec29/lec29.pdf-0002-00.png)
+![Row minima subtraction 5x5 example](../transcripts/images/lec29/lec29.pdf-0006-00.png)
+![Zero covering with horizontal and vertical lines](../transcripts/images/lec29/lec29.pdf-0008-00.png)
+![Adjustment with smallest uncovered 2](../transcripts/images/lec29/lec29.pdf-0011-00.png)
+![4x4 exercise hours table](../transcripts/images/lec29/lec29.pdf-0014-00.png)
 
 ## Lec 30 — Case Studies and Quiz (Transport + Earlier Modules)
 
@@ -276,10 +276,10 @@ Module-4 questions state question plus answer. Other-module questions state ques
 
 Key slide images:
 
-![Wheat transportation cost and supply demand table](../transcribe_md/images/lec30/lec30.pdf-0006-02.png)
-![Quiz questions 1 to 4](../transcribe_md/images/lec30/lec30.pdf-0007-04.png)
-![Quiz questions 11 to 13](../transcribe_md/images/lec30/lec30.pdf-0009-00.png)
-![Quiz answers transportation and assignment](../transcribe_md/images/lec30/lec30.pdf-0012-02.png)
+![Wheat transportation cost and supply demand table](../transcripts/images/lec30/lec30.pdf-0006-02.png)
+![Quiz questions 1 to 4](../transcripts/images/lec30/lec30.pdf-0007-04.png)
+![Quiz questions 11 to 13](../transcripts/images/lec30/lec30.pdf-0009-00.png)
+![Quiz answers transportation and assignment](../transcripts/images/lec30/lec30.pdf-0012-02.png)
 
 ## Lec 31 — Sequencing: n Jobs x 2 Machines (Johnson's Rule)
 
@@ -343,8 +343,8 @@ Elapsed/idle table (Time-in/out):
 
 $T=30$ h. Machine A idle $30-28=2$ h (end). Machine B idle $(0\!-\!1)+(22\!-\!23)+(27\!-\!28)=1+1+1=3$ h.
 
-![Johnson steps slide](../transcribe_md/images/lec31/lec31.pdf-0011-02.png)
-![Elapsed-time table](../transcribe_md/images/lec31/lec31.pdf-0013-02.png)
+![Johnson steps slide](../transcripts/images/lec31/lec31.pdf-0011-02.png)
+![Elapsed-time table](../transcripts/images/lec31/lec31.pdf-0013-02.png)
 
 ## Lec 32 — n Jobs x 3 Machines
 
@@ -387,8 +387,8 @@ Elapsed time for 3-2-1-4-5 (A/B/C in-out chained from lecture table): $T=51$ h.
 
 Exam trap stressed in lecture: all alternate optima give **same** elapsed time but **different** individual-machine idle times.
 
-![3-to-2 reduction](../transcribe_md/images/lec32/lec32.pdf-0005-01.png)
-![Elapsed table 51h](../transcribe_md/images/lec32/lec32.pdf-0006-01.png)
+![3-to-2 reduction](../transcripts/images/lec32/lec32.pdf-0005-01.png)
+![Elapsed table 51h](../transcripts/images/lec32/lec32.pdf-0006-01.png)
 
 ## Lec 33 — 2 Jobs x m Machines (Graphical Method)
 
@@ -416,8 +416,8 @@ $$T = 17+3 = 20 = 20+0$$
 
 So $20$ h total; Job 1 done first in path sense but both finish together in elapsed accounting.
 
-![Axes marking and blocks](../transcribe_md/images/lec33/lec33.pdf-0003-02.png)
-![Optimal 45-degree path](../transcribe_md/images/lec33/lec33.pdf-0007-00.png)
+![Axes marking and blocks](../transcripts/images/lec33/lec33.pdf-0003-02.png)
+![Optimal 45-degree path](../transcripts/images/lec33/lec33.pdf-0007-00.png)
 
 ## Lec 34 — n Jobs x m Machines (General Case)
 
@@ -451,10 +451,10 @@ $\min M_1=9$, $\min M_4=8$; $\max M_2=6$, $\max M_3=8$. Both $\ge$ hold ($9\ge 6
 Table values (jobs A-D x M1-M6) per transcript: row M1 $[20,19,13,22]$, M2 $[10,8,7,6]$, M3 $[9,11,10,5]$, M4 $[4,8,7,6]$, M5 $[12,10,9,10]$, M6 $[27,21,17,24]$ (columns A,B,C,D).
 $\min M_1=13$, $\min M_6=17$; intermediate maxima $10,11,8,12$ — conditions hold. $G_j=\sum_{1}^{5}T_{ij}=[55,56,46,49]$ (A,B,C,D), $H_j=\sum_{2}^{6}T_{ij}=[62,58,50,51]$. Lecture slide and transcript print $41$ for job D on H, but direct addition gives $6+5+6+10+24=51$; use $51$ and treat $41$ as a slide typo. Johnson $\to$ **C-A-B-D**, $T=130$ h (M6 finish on D).
 
-![m-machine conditions](../transcribe_md/images/lec34/lec34.pdf-0003-00.png)
-![G/H formulas](../transcribe_md/images/lec34/lec34.pdf-0004-00.png)
-![Five-job four-machine elapsed schedule](../transcribe_md/images/lec34/lec34.pdf-0007-00.png)
-![Four-job six-machine G H table](../transcribe_md/images/lec34/lec34.pdf-0010-00.png)
+![m-machine conditions](../transcripts/images/lec34/lec34.pdf-0003-00.png)
+![G/H formulas](../transcripts/images/lec34/lec34.pdf-0004-00.png)
+![Five-job four-machine elapsed schedule](../transcripts/images/lec34/lec34.pdf-0007-00.png)
+![Four-job six-machine G H table](../transcripts/images/lec34/lec34.pdf-0010-00.png)
 
 ## Lec 35 — Sequencing Revision: Tie Handling, 3-Machine, Graphical + Quiz
 
@@ -503,11 +503,11 @@ $\min P=19$, $\max Q=50$, $\min R=51$. First fails ($19\ge 50$ false); second ho
 
 Key slide images:
 
-![Tie example data 5x2](../transcribe_md/images/lec35/lec35.pdf-0002-00.png)
-![Three-machine PQR data and sequence](../transcribe_md/images/lec35/lec35.pdf-0006-00.png)
-![Graphical 2x5 data and blocks](../transcribe_md/images/lec35/lec35.pdf-0008-00.png)
-![Quiz answers definitions and conditions](../transcribe_md/images/lec35/lec35.pdf-0012-04.png)
-![Quiz answers graphical and Johnson](../transcribe_md/images/lec35/lec35.pdf-0013-02.png)
+![Tie example data 5x2](../transcripts/images/lec35/lec35.pdf-0002-00.png)
+![Three-machine PQR data and sequence](../transcripts/images/lec35/lec35.pdf-0006-00.png)
+![Graphical 2x5 data and blocks](../transcripts/images/lec35/lec35.pdf-0008-00.png)
+![Quiz answers definitions and conditions](../transcripts/images/lec35/lec35.pdf-0012-04.png)
+![Quiz answers graphical and Johnson](../transcripts/images/lec35/lec35.pdf-0013-02.png)
 
 ## Key exam takeaways
 

@@ -12,13 +12,13 @@ Start here: [`Notes/README.md`](Notes/README.md) (index + exam strategy), then r
 | `Notes/` | Detailed module-wise exam notes (start with `Notes/README.md`) |
 | `Notes/figures/` | Flowcharts (`m*.png`, from LaTeX-TikZ sources in `tex/`) and matplotlib/seaborn graphs (`g_*.png`, via `make_graphs.py`) |
 | `Questions/` | Weekly assignment-style practice sets (Weeks 1–8) + 100-mark mock final, all with answer keys and worked solutions |
-| `transcribe_md/` | Full lecture transcripts in Markdown (`lec1.md`–`lec40.md`) with slide images under `transcribe_md/images/lecN/` |
-| `Transcribes/` | Source lecture PDFs — **kept locally only, git-ignored, not pushed** |
-| `convert_transcribes.py` | Script that converts `Transcribes/*.pdf` into `transcribe_md/` (requires `pymupdf4llm` + `pillow`) |
+| `transcripts/` | Full lecture transcripts in Markdown (`lec1.md`–`lec40.md`) with slide images under `transcripts/images/lecN/` |
+| `source_pdfs/` | Source lecture PDFs — **kept locally only, git-ignored, not pushed** |
+| `convert_pdfs_to_md.py` | Script that converts `source_pdfs/*.pdf` into `transcripts/` (requires `pymupdf4llm` + `pillow`) |
 
 ## Regenerating
 
-- Transcripts: place the 40 lecture PDFs in `Transcribes/` and run `convert_transcribes.py` (see its docstring).
+- Transcripts: place the 40 lecture PDFs in `source_pdfs/` and run `convert_pdfs_to_md.py` (see its docstring).
 - Graphs: run `Notes/figures/make_graphs.py` (requires `matplotlib`, `seaborn`).
 - Flowcharts: edit a `.tex` source in `Notes/figures/tex/`, compile with a LaTeX engine (e.g. Tectonic: `tectonic -o <dir> <file>.tex`), convert the PDF to PNG.
 

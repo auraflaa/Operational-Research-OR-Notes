@@ -44,12 +44,12 @@ $2x_1 + 4x_2 \leq 13$, $-2x_1 + x_2 \leq 2$, $2x_1 + 2x_2 \geq 1$, $6x_1 - 4x_2 
 
 Lesson: rounding can give an infeasible or suboptimal point. A dedicated method is needed.
 
-![LP relaxation feasible region ABCDEF](../transcribe_md/images/lec24/lec24.pdf-0005-02.png)
+![LP relaxation feasible region ABCDEF](../transcripts/images/lec24/lec24.pdf-0005-02.png)
 *Slide: LP relaxation polygon ABCDEF with optimum at C.*
 
 Related theory point: the IPP feasible set (discrete lattice points) is **not convex** (convex combination of two integer points need not be integer). Its **convex hull** (green polygon in slides) is convex and every vertex of the hull is an integer-feasible point; the IPP optimum equals the LP optimum over that convex hull.
 
-![IPP feasible lattice vs convex hull](../transcribe_md/images/lec24/lec24.pdf-0006-03.png)
+![IPP feasible lattice vs convex hull](../transcripts/images/lec24/lec24.pdf-0006-03.png)
 
 ### 24.3 Method 1: Branch-and-Bound (B&B)
 
@@ -79,11 +79,11 @@ Maximize $z = 3x_1 + 2x_2$ subject to $x_1 \leq 2$, $x_2 \leq 2$, $x_1 + x_2 \le
     - LP022: LP02 + $x_1 \geq 2$. Infeasible (violates $x_1 + x_2 \leq 3.5$ with $x_2 \geq 2$ only at a point already excluded). Fathomed.
 - Tree: LP0(9) branches to LP01(8, integer) and LP02(8.5), which branches to LP021(7, integer) and LP022(infeasible). Best integer: **$(2,1)$, $z = 8$**.
 
-![B&B tree for the example](../transcribe_md/images/lec24/lec24.pdf-0013-04.png)
+![B&B tree for the example](../transcripts/images/lec24/lec24.pdf-0013-04.png)
 
 Lecture also sketches a larger minimization example ($\min 3x_4+4x_5+5x_6$ with branching tree shown on slides) — same logic, only the fathoming comparison is reversed (prune when bound $\geq$ incumbent).
 
-![Minimization branch-and-bound tree](../transcribe_md/images/lec24/lec24.pdf-0015-03.png)
+![Minimization branch-and-bound tree](../transcripts/images/lec24/lec24.pdf-0015-03.png)
 *Slide: bifurcation tree for the minimization example with more variables.*
 
 ### 24.4 Method 2: Gomory Cutting-Plane Method
@@ -93,7 +93,7 @@ Why: after finitely many cuts in the pure-integer case the LP optimum becomes in
 
 ![Gomory cutting-plane loop](figures/m3_02_gomory_loop.png)
 
-![Gomory Table 1 optimum](../transcribe_md/images/lec24/lec24.pdf-0016-03.png)
+![Gomory Table 1 optimum](../transcripts/images/lec24/lec24.pdf-0016-03.png)
 *Slide: simplex optimum tableau with fractional row for $x_1$.*
 
 Idea: iteratively add a valid inequality ("cut") that slices off the current fractional LP optimum but no integer-feasible point, then re-solve.
@@ -138,10 +138,10 @@ Single linear GP (general form): Minimize $F = u + v$ subject to $f(x) + u - v =
 
 **Goal constraint vs real (system) constraint:** the goal equation is soft (deviations allowed but penalized); real constraints (demand caps, capacity) are hard and must hold.
 
-![Deviational variables u and v](../transcribe_md/images/lec25/lec25.pdf-0003-02.png)
+![Deviational variables u and v](../transcripts/images/lec25/lec25.pdf-0003-02.png)
 *Slide: under-achievement u and over-achievement v with three cases.*
 
-![Simplex tableaux with u v care](../transcribe_md/images/lec25/lec25.pdf-0008-02.png)
+![Simplex tableaux with u v care](../transcripts/images/lec25/lec25.pdf-0008-02.png)
 *Slide: simplex iterations keeping u and v out of the basis together.*
 
 ### 25.2 Worked single-goal example (graphical + simplex)
@@ -153,7 +153,7 @@ Minimize $F = u + v$ subject to $80x_1 + 40x_2 + u - v = 640$, $x_1 \leq 6$, $x_
 - Graphical reading: line $80x_1+40x_2 = 640$ is segment DE with D $= (6,4)$, E $= (4,8)$. On DE: $u = v = 0$, $F = 0$ (goal exactly met). Region DEC (above line): $u = 0, v > 0$ (over-achievement). Region OADEB (below line): $u > 0, v = 0$ (under-achievement).
 - Simplex: standardize with slacks $x_1 + x_3 = 6$, $x_2 + x_4 = 8$. **Crucial simplex caution:** never let $u$ and $v$ enter the basis together (enforce complementarity $u \cdot v = 0$ at every iteration). Final tableau shows alternate optima (zero reduced cost on non-basic $x_3$): one more iteration gives the second endpoint. Solutions: D $= (6,4)$ and E $= (4,8)$, $F = 0$; in fact every convex combination of D and E (the whole segment DE) is optimal with the goal exactly achieved.
 
-![GP graphical solution: segment DE](../transcribe_md/images/lec25/lec25.pdf-0006-00.png)
+![GP graphical solution: segment DE](../transcripts/images/lec25/lec25.pdf-0006-00.png)
 
 ### 25.3 Multi-goal GP: formulation
 
@@ -182,7 +182,7 @@ Goal equations: $x_1 + x_2 + u_1 - v_1 = 80$; $x_1 + u_2 = 70$; $x_2 + u_3 = 45$
 - Weighted form (illustrative weights 10, 8, 5, 3, 1): $\min F = 10u_1 + 8v_4 + 5u_2 + 3u_3 + v_1$.
 - Preemptive form: $F_1 = u_1 = 80 - x_1 - x_2 + v_1$; $F_2 = v_4$; $F_3 = 5u_2 + 3u_3 = 485 - 5x_1 - 3x_2$; $F_4 = v_1$. Minimize $F_1$, then $F_2$ without hurting $F_1$, etc.
 
-![Weighted priority table](../transcribe_md/images/lec25/lec25.pdf-0018-03.png)
+![Weighted priority table](../transcripts/images/lec25/lec25.pdf-0018-03.png)
 *Slide: priorities P1 to P4 mapped to variables and weights 10 8 5 3 1.*
 
 Exam exercise (TV sets, answer stated in lecture): $x_1, x_2$ = sets of type I, II; $\min F = u+v$ s.t. $800x_1 + 400x_2 + u - v = 24000$, $x_1 + x_2 \leq 40$, $x_1 \leq 24$, $x_2 \leq 30$. Solutions include $(24,12)$ and $(20,20)$ and their convex combinations (goal exactly met, $F = 0$); over-achievement up to Rs. 25,000 is possible (e.g., at the stated mix).
@@ -191,7 +191,7 @@ Exam exercise (TV sets, answer stated in lecture): $x_1, x_2$ = sets of type I, 
 - Steps: minimize $F = u + v$ subject to the profit-goal equation plus the three capacity caps.
 - Answer: as above; the firm can over-achieve up to 25000 with 25 and 16 sets.
 
-![TV exercise formulation and answer](../transcribe_md/images/lec25/lec25.pdf-0020-03.png)
+![TV exercise formulation and answer](../transcripts/images/lec25/lec25.pdf-0020-03.png)
 *Slide: TV goal model with solution points and over-achievement limit.*
 
 ## Lecture 26: Multi-Objective Programming (MOP)
@@ -220,13 +220,13 @@ Through a feasible point $P$, draw level lines of $f_1$ (CD) and $f_2$ (AB) with
 
 Theorem: if $x^0$ is the **unique** minimizer of any single $f_i$, then $x^0$ is efficient. Converse is false — an efficient point need not uniquely minimize any objective (Case 3 below).
 
-![Efficiency cone at P](../transcribe_md/images/lec26/lec26.pdf-0004-03.png)
+![Efficiency cone at P](../transcripts/images/lec26/lec26.pdf-0004-03.png)
 
 ### 26.3 Worked example: three cases on one feasible region
 
 Constraints: $x_1 + 2x_2 \geq 2$, $2x_1 - x_2 \leq 4$, $x_1 + x_2 \leq 5$, $x_1, x_2 \geq 0$. Feasible polygon ABCD with A $= (2,0)$, B $= (3,2)$, C $= (0,5)$, D $= (0,1)$.
 
-![Feasible polygon ABCD](../transcribe_md/images/lec26/lec26.pdf-0009-03.png)
+![Feasible polygon ABCD](../transcripts/images/lec26/lec26.pdf-0009-03.png)
 *Slide: feasible region ABCD with vertices A B C D.*
 
 Vertex values used in the lecture:
@@ -241,7 +241,7 @@ Vertex values used in the lecture:
 - Case 1 (blue): $f_1 = x_1 + x_2$, $f_2 = 5x_1 + 2x_2$. Vertex values: $f_1$: A=2, B=5, C=5, D=1; $f_2$: A=10, B=19, C=10, D=2. Both uniquely minimized at D. So D is the **ideal** solution and also the unique efficient point (cone at D meets the feasible region only at D).
 - Case 2 (pink): $f_1 = -(2x_1 + x_2)$, $f_2 = -(x_1 + 2x_2)$. $f_1$ uniquely minimized at B $(3,2)$; $f_2$ uniquely minimized at C $(0,5)$. **No ideal solution.** Cone test: with vertex anywhere on segment BC the cone has no other feasible point in common — **every point of BC is efficient**.
 
-![Case 2 efficient segment BC](../transcribe_md/images/lec26/lec26.pdf-0013-00.png)
+![Case 2 efficient segment BC](../transcripts/images/lec26/lec26.pdf-0013-00.png)
 *Slide: cone vertex on BC showing every point of BC is efficient.*
 - Case 3 (green): $f_1 = -(2x_1 - x_2)$, $f_2 = -(x_1 + x_2)$. Both minimized at B $(3,2)$, so B is ideal — but **not uniquely**: all of AB ties for $f_1$, all of BC ties for $f_2$. Only B itself is efficient (cone on AB or BC edges overlaps the feasible region). Shows efficient $\not\Rightarrow$ unique minimizer of some $f_i$.
 
@@ -251,7 +251,7 @@ Vertex values used in the lecture:
 
 Condensed worked instance (Case 2 above): $F = \lambda_1 f_1 + \lambda_2 f_2$.
 
-![Weighted sum statement](../transcribe_md/images/lec26/lec26.pdf-0016-02.png)
+![Weighted sum statement](../transcripts/images/lec26/lec26.pdf-0016-02.png)
 *Slide: weighted-sum objective with positive weights.*
 
 - $\lambda = (1,4)$: $F = -(2x_1+x_2) - 4(x_1+2x_2) = -6x_1 - 9x_2$; minimum (most negative) at C $(0,5)$ — efficient.
@@ -302,7 +302,7 @@ General recursion for one additive constraint $a_1u_1 + \cdots + a_nu_n \geq b$ 
 - Steps: define backward states and value functions; minimize each stage by calculus; pick smallest feasible $x_3$.
 - Answer: $u_1 = u_2 = u_3 = 100/3$ with minimum $10000/3$.
 
-![Continuous DP example](../transcribe_md/images/lec27/lec27.pdf-0006-02.png)
+![Continuous DP example](../transcripts/images/lec27/lec27.pdf-0006-02.png)
 *Slide: continuous three-variable DP with sum constraint 100.*
 
 States (backward): $x_3 = u_1+u_2+u_3 \geq 100$; $x_2 = u_1+u_2 = x_3-u_3$; $x_1 = u_1 = x_2-u_2$. Recursion: $F_1(x_1) = u_1^2 = x_1^2$; $F_2(x_2) = \min_{u_2}[u_2^2 + (x_2-u_2)^2]$; $F_3(x_3) = \min_{u_3}[u_3^2 + F_2(x_3-u_3)]$.
@@ -317,10 +317,10 @@ States (backward): $x_3 = u_1+u_2+u_3 \geq 100$; $x_2 = u_1+u_2 = x_3-u_3$; $x_1
 - Steps: build stage-return table; build state-transformation table; recurse $F_2$ then $F_3$; trace bold entries backward.
 - Answer: **A: 1 day, B: 0 days, C: 2 days; max total grade 5.**
 
-![Grade table](../transcribe_md/images/lec27/lec27.pdf-0009-02.png)
+![Grade table](../transcripts/images/lec27/lec27.pdf-0009-02.png)
 *Slide: estimated grades for 0 to 3 study days in A B C.*
 
-![Stage returns](../transcribe_md/images/lec27/lec27.pdf-0011-05.png)
+![Stage returns](../transcripts/images/lec27/lec27.pdf-0011-05.png)
 *Slide: stage-return values $f_j(u_j)$ used in the recursion.*
 
 Student has 3 days for courses A, B, C (whole days only). Grade table $f_j(u_j)$:
@@ -340,7 +340,7 @@ States: $x_3 = u_1+u_2+u_3 \leq 3$, $x_2 = x_3-u_3$, $x_1 = x_2-u_2$; recursion 
 - Stage 3 table: $F_3(x_3 \leq 3) = \max = 5$, attained at $u_3 = 2$ with $x_2 = 1$, then $u_2 = 0$, $u_1 = 1$ (trace bold/red entries backward).
 - Optimal policy: **A: 1 day, B: 0 days, C: 2 days; max total grade 5.**
 
-![DP stage tables for study allocation](../transcribe_md/images/lec27/lec27.pdf-0012-04.png)
+![DP stage tables for study allocation](../transcripts/images/lec27/lec27.pdf-0012-04.png)
 
 ### 27.4 Worked example C: multiplicative constraint (state = product)
 
@@ -348,7 +348,7 @@ States: $x_3 = u_1+u_2+u_3 \leq 3$, $x_2 = x_3-u_3$, $x_1 = x_2-u_2$; recursion 
 - Steps: define product states $x_3$, $x_2 = x_3/u_3$, $x_1 = x_2/u_2$; build square-return and division tables; recurse and trace red entries backward.
 - Answer: **max 38 at $(6,1,1)$** with symmetric alternates $(1,6,1)$ and $(1,1,6)$.
 
-![Multiplicative DP recursion tables](../transcribe_md/images/lec27/lec27.pdf-0018-03.png)
+![Multiplicative DP recursion tables](../transcripts/images/lec27/lec27.pdf-0018-03.png)
 *Slide: stage 3 recursion table leading to maximum 38.*
 
 Minimize-form recursion adapts to $\prod_j u_j \geq k$ by replacing partial sums with partial products: $x_n = u_n\cdots u_1 \geq k$, $x_{j-1} = x_j/u_j$, same $F_j(x_j) = \text{opt}_{u_j}[f_j(u_j)+F_{j-1}(x_{j-1})]$.

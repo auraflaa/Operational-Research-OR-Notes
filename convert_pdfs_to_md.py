@@ -1,6 +1,6 @@
-"""Convert all NPTEL lecture transcribes (PDF) to Markdown with images.
+"""Convert all NPTEL lecture PDFs to Markdown with images.
 Uses pymupdf4llm - lightweight, runnable locally (pip install pymupdf4llm).
-Run with: pdfenv/Scripts/python.exe convert.py
+Run with: pdfenv/Scripts/python.exe convert_pdfs_to_md.py
 """
 import os
 import re
@@ -8,9 +8,9 @@ from pathlib import Path
 import pymupdf4llm
 
 ROOT = Path(__file__).parent
-SRC = ROOT / "Transcribes"       # source PDFs (git-ignored, not pushed)
-OUT = ROOT / "transcribe_md"
-IMG_ROOT = OUT / "images"  # images per lecture: transcribe_md/images/lec1/...
+SRC = ROOT / "source_pdfs"       # source PDFs (git-ignored, not pushed)
+OUT = ROOT / "transcripts"
+IMG_ROOT = OUT / "images"  # images per lecture: transcripts/images/lec1/...
 COURSE_URL = "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ma85"
 
 OUT.mkdir(exist_ok=True)
@@ -18,8 +18,8 @@ IMG_ROOT.mkdir(exist_ok=True)
 
 # NOTE: pymupdf4llm resolves `image_path` relative to the current working
 # directory, while the ![](...) refs are written verbatim. So run from OUT:
-# image_path="images/lec1" -> files land in transcribe_md/images/lec1 AND the
-# refs "images/lec1/..." resolve correctly relative to transcribe_md/*.md.
+# image_path="images/lec1" -> files land in transcripts/images/lec1 AND the
+# refs "images/lec1/..." resolve correctly relative to transcripts/*.md.
 os.chdir(OUT)
 
 def lec_num(p: Path) -> int:
@@ -32,7 +32,7 @@ print(f"Found {len(pdfs)} PDFs")
 for pdf in pdfs:
     n = lec_num(pdf)
     name = f"lec{n}"
-    img_dir_rel = f"images/{name}"          # relative to transcribe_md/*.md
+    img_dir_rel = f"images/{name}"          # relative to transcripts/*.md
     img_dir_abs = OUT / img_dir_rel
     img_dir_abs.mkdir(parents=True, exist_ok=True)
     out_md = OUT / f"{name}.md"
@@ -52,7 +52,7 @@ for pdf in pdfs:
     frontmatter = (
         "---\n"
         f"lecture: {n}\n"
-        f"source_pdf: Transcribes/{pdf.name}\n"
+        f"source_pdf: source_pdfs/{pdf.name}\n"
         f"course: {COURSE_URL}\n"
         "---\n\n"
     )
