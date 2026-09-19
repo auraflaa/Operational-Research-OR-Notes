@@ -11,6 +11,7 @@ Start here: [`Notes/README.md`](Notes/README.md) (index + exam strategy), then r
 |---|---|
 | `Notes/` | Detailed module-wise exam notes (start with `Notes/README.md`) |
 | `Notes/figures/` | Flowcharts (`m*.png`, from LaTeX-TikZ sources in `tex/`) and matplotlib/seaborn graphs (`g_*.png`, via `make_graphs.py`) |
+| `Questions/` | Weekly assignment-style practice sets (Weeks 1–8) + 100-mark mock final, all with answer keys and worked solutions |
 | `transcribe_md/` | Full lecture transcripts in Markdown (`lec1.md`–`lec40.md`) with slide images under `transcribe_md/images/lecN/` |
 | `Transcribes/` | Source lecture PDFs — **kept locally only, git-ignored, not pushed** |
 | `convert_transcribes.py` | Script that converts `Transcribes/*.pdf` into `transcribe_md/` (requires `pymupdf4llm` + `pillow`) |
