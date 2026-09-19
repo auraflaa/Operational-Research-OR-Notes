@@ -6,46 +6,46 @@ Coverage: multi-objective programming (ideal vs efficient solutions, efficiency 
 
 **Q1.** Consider the theorem from Lecture 26: if $X^0$ is a unique minimizer of one objective $f_i$ in a multi-objective problem, then $X^0$ is an efficient solution, but the converse is false. This statement is:
 
-  a) True; Case 3 of the lecture ($B = (3,2)$ efficient but tying on $AB$ for $f_1$ and on $BC$ for $f_2$) is the counter-example to the converse
-  b) False; a unique minimizer of one objective is never efficient
-  c) True; and the converse is also always true
-  d) False; efficiency implies unique minimization of every objective
+  - a) True; Case 3 of the lecture ($B = (3,2)$ efficient but tying on $AB$ for $f_1$ and on $BC$ for $f_2$) is the counter-example to the converse
+  - b) False; a unique minimizer of one objective is never efficient
+  - c) True; and the converse is also always true
+  - d) False; efficiency implies unique minimization of every objective
 
 *Source: Lecture 30 quiz Q8 (theorem from Lecture 26)*
 
 **Q2.** In a balanced transportation problem with $4$ origins and $5$ destinations, the number of linearly independent constraint equations is:
 
-  a) $20$
-  b) $9$
-  c) $8$
-  d) $4$
+  - a) $20$
+  - b) $9$
+  - c) $8$
+  - d) $4$
 
 *Source: Lecture 30 quiz Q12*
 
 **Q3.** In the Hungarian method for an $n \times n$ assignment problem, the current reduced matrix is optimal when:
 
-  a) the number of zeros equals $n$
-  b) the minimum number of horizontal and vertical lines covering all zeros equals $n$ (the number of jobs), with assignment made at zero positions
-  c) every row contains at least two zeros
-  d) the smallest uncovered entry is zero
+  - a) the number of zeros equals $n$
+  - b) the minimum number of horizontal and vertical lines covering all zeros equals $n$ (the number of jobs), with assignment made at zero positions
+  - c) every row contains at least two zeros
+  - d) the smallest uncovered entry is zero
 
 *Source: Lecture 30 quiz Q15*
 
 **Q4.** Which of the following statements is correct?
 
-  a) A transportation problem is a special type of assignment problem
-  b) An assignment problem is a special case of a transportation problem with $m = n$ and all supplies and demands equal to $1$; a transportation problem is a special type of LPP
-  c) Transportation and assignment problems cannot be written as linear programs
-  d) An unbalanced assignment problem has no feasible solution even after adding dummies
+  - a) A transportation problem is a special type of assignment problem
+  - b) An assignment problem is a special case of a transportation problem with $m = n$ and all supplies and demands equal to $1$; a transportation problem is a special type of LPP
+  - c) Transportation and assignment problems cannot be written as linear programs
+  - d) An unbalanced assignment problem has no feasible solution even after adding dummies
 
 *Source: Lecture 30 quiz Q11 and Q13*
 
 **Q5.** A basic feasible solution of a minimization transportation problem with dual variables $u_i, v_j$ satisfying $u_i + v_j = c_{ij}$ on basic cells is optimal if and only if:
 
-  a) all opportunity costs $r_{ij} = c_{ij} - u_i - v_j$ on non-basic cells satisfy $r_{ij} \ge 0$; VAM usually gives the lowest IBFS cost of the three methods but is not guaranteed optimal
-  b) all $r_{ij} \le 0$ on basic cells
-  c) the NW-corner cost is lower than the VAM cost
-  d) the number of occupied cells exceeds $m + n - 1$
+  - a) all opportunity costs $r_{ij} = c_{ij} - u_i - v_j$ on non-basic cells satisfy $r_{ij} \ge 0$; VAM usually gives the lowest IBFS cost of the three methods but is not guaranteed optimal
+  - b) all $r_{ij} \le 0$ on basic cells
+  - c) the NW-corner cost is lower than the VAM cost
+  - d) the number of occupied cells exceeds $m + n - 1$
 
 **Q6.** Determine the ideal and the efficient solutions of: $\max f_1 = 5x_1 + 4x_2$, $\max f_2 = 3x_1 - 2x_2$ subject to $x_1 + 2x_2 \le 4$, $-x_1 + x_2 \le 1$, $x_1, x_2 \ge 0$. Report $f_1, f_2$ at each extreme point.
 

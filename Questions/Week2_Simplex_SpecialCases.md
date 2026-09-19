@@ -6,38 +6,38 @@ Coverage: Big-M and two-phase methods, multiple optima, unboundedness, infeasibi
 
 **Q1 (MCQ).** When a Max LPP has a $\geq$ or $=$ row with no unit (basic) column, the Big-M method:
 
-  a) subtracts a surplus variable and stops, since no BFS can ever exist.
-  b) adds one artificial variable per such row and penalizes it by $-M$ ($M \to +\infty$) in the Max objective, driving it to zero.
-  c) adds one artificial variable per such row with reward $+M$ in the Max objective.
-  d) multiplies the RHS by $-1$ and pivots on the surplus column directly.
+  - a) subtracts a surplus variable and stops, since no BFS can ever exist.
+  - b) adds one artificial variable per such row and penalizes it by $-M$ ($M \to +\infty$) in the Max objective, driving it to zero.
+  - c) adds one artificial variable per such row with reward $+M$ in the Max objective.
+  - d) multiplies the RHS by $-1$ and pivots on the surplus column directly.
 
 **Q2 (MCQ).** *Source: Lecture 8 quiz/exercise* Max $6x_1 + 4x_2$ s.t. $2x_1 + 3x_2 \leq 30$, $3x_1 + 2x_2 \leq 24$, $x_1 + x_2 \geq 3$, $x_1, x_2 \geq 0$. Vertex values are $A(0,10)=40$, $B(2.4,8.4)=48$, $C(8,0)=48$, $D(3,0)=18$, $E(0,3)=12$. Which is TRUE?
 
-  a) Unique optimum at $A$ with $z = 40$.
-  b) Optimum $48$ attained at $B$ and $C$ and every point of segment $BC$; infinitely many optima.
-  c) Optimum $18$ at $D$ since $x_2 = 0$ there.
-  d) The problem is infeasible because of the $\geq$ constraint.
+  - a) Unique optimum at $A$ with $z = 40$.
+  - b) Optimum $48$ attained at $B$ and $C$ and every point of segment $BC$; infinitely many optima.
+  - c) Optimum $18$ at $D$ since $x_2 = 0$ there.
+  - d) The problem is infeasible because of the $\geq$ constraint.
 
 **Q3 (MCQ).** *Source: Lecture 9 quiz/exercise* In a Max simplex tableau, for the entering variable $x_k$ ($\bar{c}_k > 0$):
 
-  a) if every pivot-column entry is $\leq 0$ so no ratio can be formed, the problem is unbounded.
-  b) if every pivot-column entry is $\leq 0$, the problem is infeasible.
-  c) if a non-basic deviation is $0$ at optimum, the problem is unbounded.
-  d) if the RHS contains a $0$, the problem is always unbounded.
+  - a) if every pivot-column entry is $\leq 0$ so no ratio can be formed, the problem is unbounded.
+  - b) if every pivot-column entry is $\leq 0$, the problem is infeasible.
+  - c) if a non-basic deviation is $0$ at optimum, the problem is unbounded.
+  - d) if the RHS contains a $0$, the problem is always unbounded.
 
 **Q4 (MCQ).** *Source: Lecture 10 quiz/exercise* A two-phase/Big-M run stops with all deviations $\leq 0$ but an artificial variable is still in basis with positive value. This means:
 
-  a) a degenerate optimum.
-  b) multiple optima.
-  c) an infeasible problem (no feasible point exists).
-  d) an unbounded problem.
+  - a) a degenerate optimum.
+  - b) multiple optima.
+  - c) an infeasible problem (no feasible point exists).
+  - d) an unbounded problem.
 
 **Q5 (MCQ).** *Source: Lecture 6/7 quiz/exercise* Consider Min $x_1 + 2x_2 + x_3$ s.t. $2x_1 + x_2 + x_3 \leq 2$, $3x_1 + 4x_2 + 2x_3 \geq 16$, $x \geq 0$. What is the outcome?
 
-  a) Unique optimum with value $2$.
-  b) Multiple optima on an edge.
-  c) Unbounded solution.
-  d) Infeasible: row 1 caps $3x_1 + 4x_2 + 2x_3$ at $8 < 16$.
+  - a) Unique optimum with value $2$.
+  - b) Multiple optima on an edge.
+  - c) Unbounded solution.
+  - d) Infeasible: row 1 caps $3x_1 + 4x_2 + 2x_3$ at $8 < 16$.
 
 **Q6 (Numerical).** *Source: Lecture 6/7 quiz/exercise* Min $z = -3x_1 + x_2 + x_3$ s.t. $x_1 - 2x_2 + x_3 \leq 11$, $-4x_1 + x_2 + 2x_3 \geq 3$, $2x_1 - x_3 = -1$, $x \geq 0$. Solve via Big-M or two-phase (Max $3x_1 - x_2 - x_3$). Give the optimum point and the Min value.
 

@@ -40,73 +40,73 @@ Note: This is instructor-style practice assembled and adapted from the weekly qu
 
 **A1.** Which statement about the general optimization model and LPPs is FALSE?
 
-  a) The three components of an optimization model are decision variables, objective function, and constraints.
-  b) If all of $f, g_k, h_j$ are linear the problem is linear programming; if any one is nonlinear it is nonlinear programming.
-  c) An integer programming problem requires some or all decision variables to take integer values.
-  d) Every linear programming problem must have exactly as many constraints as variables ($m = n$).
+  - a) The three components of an optimization model are decision variables, objective function, and constraints.
+  - b) If all of $f, g_k, h_j$ are linear the problem is linear programming; if any one is nonlinear it is nonlinear programming.
+  - c) An integer programming problem requires some or all decision variables to take integer values.
+  - d) Every linear programming problem must have exactly as many constraints as variables ($m = n$).
 
 **A2.** Max $z = 4x_1 + 3x_2$ s.t. $x_1 + x_2 \leq 6$, $2x_1 + 5x_2 \leq 20$, $x_1, x_2 \geq 0$. The optimum is:
 
-  a) $(0, 4)$, $z = 12$
-  b) $(10/3, 8/3)$, $z = 64/3$
-  c) $(6, 0)$, $z = 24$
-  d) $(0, 0)$, $z = 0$
+  - a) $(0, 4)$, $z = 12$
+  - b) $(10/3, 8/3)$, $z = 64/3$
+  - c) $(6, 0)$, $z = 24$
+  - d) $(0, 0)$, $z = 0$
 
 **A3.** A Max LPP has a $\geq$ row with no unit (basic) column after adding the surplus variable. The Big-M method:
 
-  a) stops, since no initial BFS can ever be constructed.
-  b) adds one artificial variable to that row and penalizes it by $-M$ ($M \to +\infty$) in the Max objective so it is driven to zero.
-  c) adds one artificial variable to that row with reward $+M$ in the Max objective.
-  d) pivots directly on the surplus column without any artificial variable.
+  - a) stops, since no initial BFS can ever be constructed.
+  - b) adds one artificial variable to that row and penalizes it by $-M$ ($M \to +\infty$) in the Max objective so it is driven to zero.
+  - c) adds one artificial variable to that row with reward $+M$ in the Max objective.
+  - d) pivots directly on the surplus column without any artificial variable.
 
 **A4.** In the optimal tableau of a Max LPP, a non-basic variable has reduced cost $\bar{c}_j = 0$. This signals:
 
-  a) an unbounded solution.
-  b) an infeasible solution.
-  c) multiple (alternate) optimal solutions obtainable by pivoting it in.
-  d) a degenerate but necessarily unique solution.
+  - a) an unbounded solution.
+  - b) an infeasible solution.
+  - c) multiple (alternate) optimal solutions obtainable by pivoting it in.
+  - d) a degenerate but necessarily unique solution.
 
 **A5.** Primal: Max $z = 2x_1 + 3x_2$ s.t. $5x_1 - 2x_2 \geq 3$, $-2x_1 + x_2 \leq 4$, $x_1, x_2 \geq 0$. After normalising to Max-with-$\leq$ form, the symmetric dual is:
 
-  a) Min $w = -3y_1 + 4y_2$ s.t. $-5y_1 - 2y_2 \geq 2$, $2y_1 + y_2 \geq 3$, $y_1, y_2 \geq 0$
-  b) Max $w = -3y_1 + 4y_2$ s.t. $-5y_1 - 2y_2 \leq 2$, $2y_1 + y_2 \leq 3$, $y_1, y_2 \geq 0$
-  c) Min $w = 3y_1 + 4y_2$ s.t. $5y_1 - 2y_2 \geq 2$, $-2y_1 + y_2 \geq 3$, $y_1, y_2 \geq 0$
-  d) Min $w = 2y_1 + 3y_2$ s.t. $5y_1 - 2y_2 \geq -3$, $-2y_1 + y_2 \geq 4$, $y_1, y_2 \geq 0$
+  - a) Min $w = -3y_1 + 4y_2$ s.t. $-5y_1 - 2y_2 \geq 2$, $2y_1 + y_2 \geq 3$, $y_1, y_2 \geq 0$
+  - b) Max $w = -3y_1 + 4y_2$ s.t. $-5y_1 - 2y_2 \leq 2$, $2y_1 + y_2 \leq 3$, $y_1, y_2 \geq 0$
+  - c) Min $w = 3y_1 + 4y_2$ s.t. $5y_1 - 2y_2 \geq 2$, $-2y_1 + y_2 \geq 3$, $y_1, y_2 \geq 0$
+  - d) Min $w = 2y_1 + 3y_2$ s.t. $5y_1 - 2y_2 \geq -3$, $-2y_1 + y_2 \geq 4$, $y_1, y_2 \geq 0$
 
 **A6.** For the symmetric pair Min $f(X) = C^T X$ s.t. $AX \geq B$, $X \geq 0$ and Max $w(Y) = B^T Y$ s.t. $A^T Y \leq C$, $Y \geq 0$, weak duality states that for any feasible pair $X, Y$:
 
-  a) $f(X) = w(Y)$ always.
-  b) $f(X) \leq w(Y)$.
-  c) $f(X) \geq w(Y)$, with gap $f - w \geq 0$ (sum of complementary products after adding slacks/surpluses).
-  d) no comparison is possible unless both are optimal.
+  - a) $f(X) = w(Y)$ always.
+  - b) $f(X) \leq w(Y)$.
+  - c) $f(X) \geq w(Y)$, with gap $f - w \geq 0$ (sum of complementary products after adding slacks/surpluses).
+  - d) no comparison is possible unless both are optimal.
 
 **A7.** Which statement about solving integer programs by rounding the LP relaxation is correct?
 
-  a) Rounding the LP optimum to the nearest integers always yields the integer optimum.
-  b) Rounding can produce an infeasible point or a strictly worse feasible point; the integer feasible set is discrete (non-convex), so enumeration or branch-and-bound is needed.
-  c) Rounding down (flooring) each variable always yields the integer optimum.
-  d) The integer feasible set is convex, so some rounding of the LP optimum must be optimal.
+  - a) Rounding the LP optimum to the nearest integers always yields the integer optimum.
+  - b) Rounding can produce an infeasible point or a strictly worse feasible point; the integer feasible set is discrete (non-convex), so enumeration or branch-and-bound is needed.
+  - c) Rounding down (flooring) each variable always yields the integer optimum.
+  - d) The integer feasible set is convex, so some rounding of the LP optimum must be optimal.
 
 **A8.** Factory goal model: Min $F = u + v$ s.t. $60x_1 + 30x_2 + u - v = 480$, $x_1 \leq 6$, $x_2 \leq 8$, $x_1, x_2, u, v \geq 0$, $u v = 0$. Let $f = 60x_1 + 30x_2$. Which is correct?
 
-  a) Points with $f = 480$ form the segment $DE$ with $D = (6, 4)$, $E = (4, 8)$; there $u = v = 0$ and $F = 0$.
-  b) At any optimum $u > 0$ and $v > 0$ simultaneously.
-  c) The simplex method should bring $u$ and $v$ into the basis together.
-  d) The goal can never be met because the caps $6$ and $8$ are too tight.
+  - a) Points with $f = 480$ form the segment $DE$ with $D = (6, 4)$, $E = (4, 8)$; there $u = v = 0$ and $F = 0$.
+  - b) At any optimum $u > 0$ and $v > 0$ simultaneously.
+  - c) The simplex method should bring $u$ and $v$ into the basis together.
+  - d) The goal can never be met because the caps $6$ and $8$ are too tight.
 
 **A9.** In a balanced transportation problem with $3$ origins and $4$ destinations, the number of linearly independent constraint equations is:
 
-  a) $12$
-  b) $7$
-  c) $6$
-  d) $3$
+  - a) $12$
+  - b) $7$
+  - c) $6$
+  - d) $3$
 
 **A10.** Which pair of statements is correct?
 
-  a) A game with maximin = minimax $= 0$ is strictly determinable; one with maximin = minimax $= V$ is fair.
-  b) A game with maximin = minimax $= 0$ is fair; one with maximin = minimax $= V$ (saddle exists) is strictly determinable.
-  c) Every matrix game has a saddle point, so pure strategies always suffice.
-  d) A game with no saddle point has no value.
+  - a) A game with maximin = minimax $= 0$ is strictly determinable; one with maximin = minimax $= V$ is fair.
+  - b) A game with maximin = minimax $= 0$ is fair; one with maximin = minimax $= V$ (saddle exists) is strictly determinable.
+  - c) Every matrix game has a saddle point, so pure strategies always suffice.
+  - d) A game with no saddle point has no value.
 
 ---
 

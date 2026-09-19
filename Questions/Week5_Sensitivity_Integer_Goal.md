@@ -6,46 +6,46 @@ Coverage: sensitivity II ($a_{ij}$ changes, new/deleted variables and constraint
 
 **Q1.** In the dual simplex method, the criterion for the leaving variable is:
 
-  a) most positive RHS
-  b) most negative RHS
-  c) largest deviation entry $\Delta_j$
-  d) smallest ratio $\Delta_j / a_{rj}$ over $a_{rj} > 0$
+  - a) most positive RHS
+  - b) most negative RHS
+  - c) largest deviation entry $\Delta_j$
+  - d) smallest ratio $\Delta_j / a_{rj}$ over $a_{rj} > 0$
 
 *Source: Lecture 23 quiz*
 
 **Q2.** Recall the Lec 20-21 product-mix example $\max Z = 2x_1 + 3x_2 + x_3$ with optimum basis $\{x_1, x_2\}$ and simplex multipliers $\pi = c_B B^{-1} = (5, 1)$. A new product D is proposed needing $1$ unit of labour and $1$ unit of material with profit $c_6 = 3$. Its deviation entry $\Delta_6 = c_6 - \pi P_6$ and the conclusion are:
 
-  a) $\Delta_6 = -3 \le 0$; D is not profitable, basis unchanged
-  b) $\Delta_6 = +2 > 0$; D should enter, re-solve
-  c) $\Delta_6 = 0$; alternate optima with D in the basis
-  d) $\Delta_6 = +8 > 0$; D replaces $x_1$ immediately
+  - a) $\Delta_6 = -3 \le 0$; D is not profitable, basis unchanged
+  - b) $\Delta_6 = +2 > 0$; D should enter, re-solve
+  - c) $\Delta_6 = 0$; alternate optima with D in the basis
+  - d) $\Delta_6 = +8 > 0$; D replaces $x_1$ immediately
 
 *Source: Lecture 21 in-lecture example*
 
 **Q3.** Consider $\max z = 3x_1 + 4x_2$ s.t. $2x_1 + 4x_2 \le 13$, $-2x_1 + x_2 \le 2$, $2x_1 + 2x_2 \ge 1$, $6x_1 - 4x_2 \le 15$, $x_1, x_2 \ge 0$ integer. The LP relaxation optimum is $C = (7/2, 3/2)$, $z = 33/2$. Which statement is correct?
 
-  a) Rounding $C$ gives $(4, 2)$ with $z = 20$, the integer optimum
-  b) The four roundings of $C$ are $(3,1), (4,1), (4,2), (3,2)$; only $(3,1)$ with $z = 13$ is feasible, while the true integer optimum is $(2,2)$ with $z = 14$
-  c) Rounding always recovers the integer optimum for two-variable problems
-  d) The integer feasible set is convex, so $C$ rounded down to $(3,1)$ must be optimal
+  - a) Rounding $C$ gives $(4, 2)$ with $z = 20$, the integer optimum
+  - b) The four roundings of $C$ are $(3,1), (4,1), (4,2), (3,2)$; only $(3,1)$ with $z = 13$ is feasible, while the true integer optimum is $(2,2)$ with $z = 14$
+  - c) Rounding always recovers the integer optimum for two-variable problems
+  - d) The integer feasible set is convex, so $C$ rounded down to $(3,1)$ must be optimal
 
 *Source: Lecture 24 in-lecture example*
 
 **Q4.** Factory GP: $\min F = u + v$ s.t. $80x_1 + 40x_2 + u - v = 640$, $x_1 \le 6$, $x_2 \le 8$, $x_1, x_2, u, v \ge 0$, $u \cdot v = 0$. Let $f = 80x_1 + 40x_2$. Which statement is correct?
 
-  a) Points with $f = 640$ form segment $DE$ with $D = (6,4)$, $E = (4,8)$; there $u = v = 0$, $F = 0$
-  b) At any feasible point $u > 0$ and $v > 0$ simultaneously in the optimum
-  c) The simplex method should bring $u$ and $v$ into the basis together
-  d) The goal can never be met exactly because demand caps $6$ and $8$ are too tight
+  - a) Points with $f = 640$ form segment $DE$ with $D = (6,4)$, $E = (4,8)$; there $u = v = 0$, $F = 0$
+  - b) At any feasible point $u > 0$ and $v > 0$ simultaneously in the optimum
+  - c) The simplex method should bring $u$ and $v$ into the basis together
+  - d) The goal can never be met exactly because demand caps $6$ and $8$ are too tight
 
 *Source: Lecture 25 in-lecture example*
 
 **Q5.** The company multi-goal example (Lec 25) has goals $x_1 + x_2 + u_1 - v_1 = 80$, $x_1 + u_2 = 70$, $x_2 + u_3 = 45$, $x_1 + x_2 + u_4 - v_4 = 90$ with priorities $P_1 \gg P_2 \gg P_3 \gg P_4$. Which formulation is the preemptive (lexicographic) one?
 
-  a) $\min F = 10u_1 + 8v_4 + 5u_2 + 3u_3 + v_1$ with a single objective row
-  b) $\min F_1 = u_1$, then $\min F_2 = v_4$, then $\min F_3 = 5u_2 + 3u_3$, then $\min F_4 = v_1$, optimised lexicographically without degrading higher priorities
-  c) $\min F = u_1 + v_1 + u_2 + u_3 + u_4 + v_4$ with equal weights
-  d) $\min F = u_1 v_1 + u_4 v_4$ subject to $u_k v_k = 0$
+  - a) $\min F = 10u_1 + 8v_4 + 5u_2 + 3u_3 + v_1$ with a single objective row
+  - b) $\min F_1 = u_1$, then $\min F_2 = v_4$, then $\min F_3 = 5u_2 + 3u_3$, then $\min F_4 = v_1$, optimised lexicographically without degrading higher priorities
+  - c) $\min F = u_1 + v_1 + u_2 + u_3 + u_4 + v_4$ with equal weights
+  - d) $\min F = u_1 v_1 + u_4 v_4$ subject to $u_k v_k = 0$
 
 **Q6.** Solve by branch-and-bound: $\max z = 3x_1 + 2x_2$ s.t. $x_1 \le 2$, $x_2 \le 2$, $x_1 + x_2 \le 3.5$, $x_1, x_2 \ge 0$ integer. Report the integer optimum $(x_1, x_2)$ and $z^*$.
 
