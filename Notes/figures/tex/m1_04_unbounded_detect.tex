@@ -1,0 +1,21 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\tikzstyle{proc}=[rectangle,draw,rounded corners,fill=blue!10,align=center,minimum width=3.4cm,minimum height=0.9cm,font=\small]
+\tikzstyle{dec}=[diamond,draw,fill=green!10,align=center,aspect=2,font=\small]
+\tikzstyle{term}=[rectangle,draw,rounded corners=8pt,fill=gray!15,align=center,minimum width=2.6cm,minimum height=0.9cm,font=\small\bfseries]
+\tikzstyle{arr}=[->,thick]
+\begin{document}
+\begin{tikzpicture}[node distance=1.7cm]
+\node[proc] (A) {Optimum\\not yet reached};
+\node[proc, below=of A] (B) {Pick entering variable\\with positive deviation};
+\node[dec, below=of B] (C) {Check pivot\\column entries};
+\node[proc, below left=1.7cm and 0.8cm of C] (D) {Do ratio test\\and pivot};
+\node[term, below right=1.7cm and 0.8cm of C] (E) {Declare unbounded\\solution};
+\draw[arr] (A) -- (B);
+\draw[arr] (B) -- (C);
+\draw[arr] (C) -- node[left, font=\small] {$\geq 1$ positive} (D);
+\draw[arr] (C) -- node[right, font=\small] {All $\leq 0$} (E);
+\draw[arr] (D.west) -- ++(-1.8cm,0) |- (A.west);
+\end{tikzpicture}
+\end{document}

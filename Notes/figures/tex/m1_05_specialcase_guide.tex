@@ -1,0 +1,22 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\tikzstyle{proc}=[rectangle,draw,rounded corners,fill=blue!10,align=center,minimum width=3.4cm,minimum height=0.9cm,font=\small]
+\tikzstyle{dec}=[diamond,draw,fill=green!10,align=center,aspect=2,font=\small]
+\tikzstyle{term}=[rectangle,draw,rounded corners=8pt,fill=gray!15,align=center,minimum width=2.6cm,minimum height=0.9cm,font=\small\bfseries]
+\tikzstyle{arr}=[->,thick]
+\begin{document}
+\begin{tikzpicture}[node distance=1.7cm]
+\node[proc] (A) {Tableau stopped\\deviations $\leq 0$};
+\node[dec, below=of A] (B) {Artificial still\\basic and $>0$?};
+\node[term, right=1.6cm of B] (C) {Declare\\infeasible};
+\node[dec, below=of B] (D) {Nonbasic zero\\deviation?};
+\node[term, right=1.6cm of D] (E) {Declare multiple\\optima};
+\node[term, below=of D] (F) {Report unique\\optimum};
+\draw[arr] (A) -- (B);
+\draw[arr] (B) -- node[above, font=\small] {Yes} (C);
+\draw[arr] (B) -- node[right, font=\small] {No} (D);
+\draw[arr] (D) -- node[above, font=\small] {Yes} (E);
+\draw[arr] (D) -- node[right, font=\small] {No} (F);
+\end{tikzpicture}
+\end{document}

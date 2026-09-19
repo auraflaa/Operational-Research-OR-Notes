@@ -1,0 +1,22 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\tikzstyle{proc}=[rectangle,draw,rounded corners,fill=blue!10,align=center,minimum width=3.4cm,minimum height=0.9cm,font=\small]
+\tikzstyle{dec}=[diamond,draw,fill=green!10,align=center,aspect=2,font=\small]
+\tikzstyle{term}=[rectangle,draw,rounded corners=8pt,fill=gray!15,align=center,minimum width=2.6cm,minimum height=0.9cm,font=\small\bfseries]
+\tikzstyle{arr}=[->,thick]
+\begin{document}
+\begin{tikzpicture}[node distance=1.7cm]
+\node[term] (A) {Check saddle\\and shift matrix};
+\node[proc, right=of A] (B) {Set $x=p/V$\\$y=q/V$};
+\node[proc, right=of B] (C) {A LP: $\min \sum x$\\subject to $\ge 1$};
+\node[proc, right=of C] (D) {B LP: $\max \sum y$\\subject to $\le 1$};
+\node[proc, below=of D] (E) {Solve B LP\\by simplex};
+\node[term, left=of E] (F) {Dual readout\\recover $V$};
+\draw[arr] (A) -- (B);
+\draw[arr] (B) -- (C);
+\draw[arr] (C) -- (D);
+\draw[arr] (D) -- (E);
+\draw[arr] (E) -- (F);
+\end{tikzpicture}
+\end{document}

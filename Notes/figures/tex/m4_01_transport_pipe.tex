@@ -1,0 +1,24 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\tikzstyle{proc}=[rectangle,draw,rounded corners,fill=blue!10,align=center,minimum width=3.4cm,minimum height=0.9cm,font=\small]
+\tikzstyle{dec}=[diamond,draw,fill=green!10,align=center,aspect=2,font=\small]
+\tikzstyle{term}=[rectangle,draw,rounded corners=8pt,fill=gray!15,align=center,minimum width=2.6cm,minimum height=0.9cm,font=\small\bfseries]
+\tikzstyle{arr}=[->,thick]
+\begin{document}
+\begin{tikzpicture}[node distance=1.7cm]
+\node[term] (A) {Check balance\\supply vs demand};
+\node[proc, below of=A] (B) {Find IBFS\\NW / Least-cost / VAM};
+\node[dec, below of=B, yshift=-0.4cm] (C) {Test by MODI\\$r_{ij}\ge 0$?};
+\node[term, right of=C, xshift=2.8cm] (D) {Optimal\\stop};
+\node[proc, below of=C, yshift=-0.4cm] (E) {Loop\\reallocation};
+\node[proc, left of=C, xshift=-2.8cm] (F) {Add $\epsilon$-zero\\cheapest indep.\ cell};
+\draw[arr] (A) -- (B);
+\draw[arr] (B) -- (C);
+\draw[arr] (C) -- node[above,font=\footnotesize]{all $r\ge 0$} (D);
+\draw[arr] (C) -- node[left,font=\footnotesize]{some $r<0$} (E);
+\draw[arr] (B) -- node[above,font=\footnotesize,sloped]{$<m{+}n{-}1$} (F);
+\draw[arr] (F) -- (C);
+\draw[arr] (E.east) -- ++(1.6,0) |- (C.east);
+\end{tikzpicture}
+\end{document}

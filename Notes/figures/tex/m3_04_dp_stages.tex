@@ -1,0 +1,20 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\tikzstyle{proc}=[rectangle,draw,rounded corners,fill=blue!10,align=center,minimum width=3.4cm,minimum height=0.9cm,font=\small]
+\tikzstyle{dec}=[diamond,draw,fill=green!10,align=center,aspect=2,font=\small]
+\tikzstyle{term}=[rectangle,draw,rounded corners=8pt,fill=gray!15,align=center,minimum width=2.6cm,minimum height=0.9cm,font=\small\bfseries]
+\tikzstyle{arr}=[->,thick]
+\begin{document}
+\begin{tikzpicture}[node distance=1.7cm]
+\node[proc] (A) {Stage 1\\decision};
+\node[proc, right=of A] (B) {State links\\to stage 2};
+\node[proc, right=of B] (C) {Stage 2\\decision};
+\node[proc, right=of C] (D) {State links\\to stage 3};
+\node[term, right=of D] (E) {Stage 3 value\\function};
+\path[arr] (A) -- (B);
+\path[arr] (B) -- (C);
+\path[arr] (C) -- (D);
+\path[arr] (D) -- (E);
+\end{tikzpicture}
+\end{document}

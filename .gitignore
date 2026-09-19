@@ -1,0 +1,19 @@
+# Source lecture PDFs (kept locally, not pushed)
+Transcribes/
+
+# Build / tooling artefacts
+convert_log.txt
+__pycache__/
+*.pyc
+*.pyo
+
+# LaTeX intermediates (keep .tex sources and final .png figures)
+Notes/figures/**/*.pdf
+Notes/figures/**/*.aux
+Notes/figures/**/*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
